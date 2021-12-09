@@ -1,0 +1,61 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.975919",
+   "Default View_TopLeft":"1067,-46",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port M_AXIS -pg 1 -lvl 7 -x 2330 -y 160 -defaultsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x -60 -y 280 -defaultsOSRD
+preplace port cam_mem_aresetn -pg 1 -lvl 0 -x -60 -y 670 -defaultsOSRD
+preplace port clk_100M_out -pg 1 -lvl 0 -x -60 -y 610 -defaultsOSRD
+preplace port clk_200M_out -pg 1 -lvl 0 -x -60 -y 490 -defaultsOSRD
+preplace port clk_400M_out -pg 1 -lvl 0 -x -60 -y 650 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x -60 -y 630 -defaultsOSRD
+preplace port s_axis_aresetn_0 -pg 1 -lvl 0 -x -60 -y 530 -defaultsOSRD
+preplace port s_axis_tlast -pg 1 -lvl 0 -x -60 -y 410 -defaultsOSRD
+preplace port s_axis_tready -pg 1 -lvl 7 -x 2330 -y 20 -defaultsOSRD
+preplace port s_axis_tvalid -pg 1 -lvl 0 -x -60 -y 450 -defaultsOSRD
+preplace portBus s_axis_tdata -pg 1 -lvl 0 -x -60 -y 370 -defaultsOSRD
+preplace portBus s_axis_tkeep -pg 1 -lvl 0 -x -60 -y 390 -defaultsOSRD
+preplace portBus s_axis_tuser -pg 1 -lvl 0 -x -60 -y 430 -defaultsOSRD
+preplace inst MAEM_P4 -pg 1 -lvl 4 -x 1310 -y 300 -defaultsOSRD
+preplace inst MD_in_Valid_gen_0 -pg 1 -lvl 3 -x 890 -y 440 -defaultsOSRD
+preplace inst axis_register_slice_0 -pg 1 -lvl 6 -x 2160 -y 180 -defaultsOSRD
+preplace inst data_latch_MAEM -pg 1 -lvl 1 -x 230 -y 440 -defaultsOSRD
+preplace inst xlconcat_3 -pg 1 -lvl 3 -x 890 -y 740 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 2 -x 580 -y 750 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 2 -x 580 -y 460 -defaultsOSRD
+preplace netloc MAE0_m_axis_tdata 1 0 1 NJ 370
+preplace netloc MAE0_m_axis_tkeep 1 0 1 NJ 390
+preplace netloc MAE0_m_axis_tlast 1 0 1 NJ 410
+preplace netloc MAE0_m_axis_tvalid 1 0 1 NJ 450
+preplace netloc MAE0_user_metadata_out 1 0 1 NJ 430
+preplace netloc MAEM_P4_m_axis_tdata 1 4 2 1520 160 NJ
+preplace netloc MAEM_P4_m_axis_tkeep 1 4 2 1550 180 NJ
+preplace netloc MAEM_P4_m_axis_tlast 1 4 2 1560 200 NJ
+preplace netloc MAEM_P4_m_axis_tvalid 1 4 2 1530 120 NJ
+preplace netloc MAEM_P4_s_axis_tready 1 1 3 440J 520 710 260 NJ
+preplace netloc MAEM_P4_user_metadata_out 1 4 2 1570 220 N
+preplace netloc MD_in_Valid_gen_0_metadata_valid 1 3 1 1060 420n
+preplace netloc PS_CLK 1 0 4 -20J 290 NJ 290 NJ 290 1030J
+preplace netloc clk_wiz_0_clk_250M 1 0 6 -10 260 NJ 260 700 230 1060 120 1520 150 1810J
+preplace netloc data_latch_0_m_axis_tdata 1 1 3 440J 200 NJ 200 N
+preplace netloc data_latch_0_m_axis_tkeep 1 1 3 450J 220 NJ 220 N
+preplace netloc data_latch_0_m_axis_tlast 1 1 3 460J 540 730 240 N
+preplace netloc data_latch_0_m_axis_tuser 1 1 1 NJ 460
+preplace netloc data_latch_0_s_axis_tready 1 0 7 0 20 NJ 20 NJ 20 NJ 20 NJ 20 NJ 20 NJ
+preplace netloc data_latch_MAEM_in_m_axis_tvalid 1 1 3 450J 530 740 280 N
+preplace netloc s_axi_aresetn_1 1 0 4 -30J 270 NJ 270 NJ 270 1040J
+preplace netloc s_axis_aresetn_0_0_2 1 0 6 -40 590 NJ 590 750 340 1050 110 N 110 1820
+preplace netloc xlconcat_3_dout 1 3 1 1040 400n
+preplace netloc xlconstant_2_dout 1 2 1 NJ 750
+preplace netloc xlslice_0_Dout_1 1 2 1 720 460n
+preplace netloc axis_register_slice_0_s_axis_tready 1 4 2 1540J 140 N
+preplace netloc Conn2 1 6 1 2310J 160n
+preplace netloc axi_interconnect_0_M07_AXI 1 0 4 NJ 280 460J 300 NJ 300 NJ
+levelinfo -pg 1 -60 230 580 890 1310 1790 2160 2330
+pagesize -pg 1 -db -bbox -sgen -250 0 2480 810
+"
+}
+0

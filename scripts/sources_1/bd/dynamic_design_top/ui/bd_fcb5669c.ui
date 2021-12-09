@@ -1,0 +1,63 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.525329",
+   "Default View_TopLeft":"-187,-343",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXIS -pg 1 -lvl 0 -x -20 -y 580 -defaultsOSRD
+preplace port M_AXIS -pg 1 -lvl 9 -x 2850 -y 390 -defaultsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x -20 -y 340 -defaultsOSRD
+preplace port clk_100M_out -pg 1 -lvl 0 -x -20 -y 400 -defaultsOSRD
+preplace port clk_200M_out -pg 1 -lvl 0 -x -20 -y 680 -defaultsOSRD
+preplace port clk_400M_out -pg 1 -lvl 0 -x -20 -y 440 -defaultsOSRD
+preplace port s_axis_aresetn_0 -pg 1 -lvl 0 -x -20 -y 660 -defaultsOSRD
+preplace inst P4_in_VALID_gen_block_lcs -pg 1 -lvl 4 -x 1170 -y 590 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 1 -x 230 -y 600 -defaultsOSRD
+preplace inst capsule_meta -pg 1 -lvl 6 -x 2020 -y 440 -defaultsOSRD
+preplace inst capsule_metadata -pg 1 -lvl 2 -x 580 -y 80 -defaultsOSRD
+preplace inst lcs_lookup_p4 -pg 1 -lvl 5 -x 1670 -y 360 -defaultsOSRD
+preplace inst lcs_out_fifo -pg 1 -lvl 8 -x 2630 -y 390 -defaultsOSRD
+preplace inst lookup_replay_maex -pg 1 -lvl 6 -x 2020 -y 540 -defaultsOSRD
+preplace inst maem_lookup -pg 1 -lvl 2 -x 580 -y 180 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -x 820 -y 180 -defaultsOSRD
+preplace inst xlconcat_2 -pg 1 -lvl 7 -x 2280 -y 410 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 580 -y 280 -defaultsOSRD
+preplace netloc Din_2 1 5 1 1890 400n
+preplace netloc MAE_BLOCK_DESIGN_clk_400M_0 1 0 5 NJ 440 NJ 440 NJ 440 NJ 440 NJ
+preplace netloc MAE_Match_Engine_m_axis_tuser 1 1 1 410 80n
+preplace netloc P4_in_VALID_gen_block_0_Tdest_valid_out_1 1 4 1 1460 500n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tdata_1 1 4 1 1380 240n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tkeep_1 1 4 1 1390 260n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tlast_1 1 4 1 1400 280n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tuser 1 4 1 1430 480n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tvalid_1 1 4 1 1420 320n
+preplace netloc P4_in_VALID_gen_block_lcs_s_axis_tready 1 1 3 N 620 NJ 620 NJ
+preplace netloc PS_CLK 1 0 5 NJ 400 NJ 400 NJ 400 NJ 400 NJ
+preplace netloc axis_data_fifo_1_m_axis_tdata 1 1 3 400 520 NJ 520 NJ
+preplace netloc axis_data_fifo_1_m_axis_tkeep 1 1 3 420 540 NJ 540 NJ
+preplace netloc axis_data_fifo_1_m_axis_tlast 1 1 3 430 560 NJ 560 NJ
+preplace netloc axis_data_fifo_1_m_axis_tvalid 1 1 3 440 600 NJ 600 NJ
+preplace netloc capsule_meta_Dout 1 6 1 2140 400n
+preplace netloc capsule_metadata_Dout 1 2 1 700J 80n
+preplace netloc clk_wiz_0_clk_250M 1 0 8 10 730 NJ 730 NJ 730 940 740 1440 610 NJ 610 2150J 590 2430
+preplace netloc lcs_lookup_p4_m_axis_tdata 1 5 3 NJ 300 NJ 300 2440
+preplace netloc lcs_lookup_p4_m_axis_tkeep 1 5 3 1880J 310 NJ 310 2430
+preplace netloc lcs_lookup_p4_m_axis_tlast 1 5 3 1890J 320 NJ 320 2420
+preplace netloc lcs_lookup_p4_m_axis_tvalid 1 5 3 NJ 380 2140J 330 2410
+preplace netloc lcs_out_fifo_s_axis_tready 1 5 3 1900J 340 NJ 340 2400
+preplace netloc lookup_replay_maex_Dout 1 6 1 2150 420n
+preplace netloc maem_lookup_Dout 1 2 1 NJ 180
+preplace netloc s_axis_aresetn_0_0_2 1 0 8 0 720 NJ 720 NJ 720 950 750 1450 600 NJ 600 NJ 600 2410
+preplace netloc sdnet_0_s_axis_tready 1 4 1 1410 300n
+preplace netloc xlconcat_0_dout 1 3 1 940 180n
+preplace netloc xlconcat_1_dout_1 1 7 1 N 410
+preplace netloc xlconstant_0_dout 1 2 1 700J 200n
+preplace netloc Conn1 1 0 1 N 580
+preplace netloc Conn2 1 8 1 N 390
+preplace netloc Conn3 1 0 5 NJ 340 NJ 340 NJ 340 NJ 340 NJ
+levelinfo -pg 1 -20 230 580 820 1170 1670 2020 2280 2630 2850
+pagesize -pg 1 -db -bbox -sgen -190 0 2960 780
+"
+}
+

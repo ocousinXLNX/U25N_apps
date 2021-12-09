@@ -1,0 +1,149 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.195999",
+   "Default View_TopLeft":"-235,-679",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port M_AXIS_Bypass -pg 1 -lvl 21 -x 7750 -y 980 -defaultsOSRD
+preplace port M_AXIS_Encrypt -pg 1 -lvl 21 -x 7750 -y 550 -defaultsOSRD
+preplace port S_AXIS -pg 1 -lvl 0 -x -80 -y 250 -defaultsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x -80 -y 390 -defaultsOSRD
+preplace port s_axi1 -pg 1 -lvl 0 -x -80 -y 610 -defaultsOSRD
+preplace port CLK_100M_in -pg 1 -lvl 0 -x -80 -y 810 -defaultsOSRD
+preplace port clk_250M -pg 1 -lvl 0 -x -80 -y 290 -defaultsOSRD
+preplace port rstp_250M -pg 1 -lvl 0 -x -80 -y 850 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x -80 -y 830 -defaultsOSRD
+preplace port s_axis_aresetn -pg 1 -lvl 0 -x -80 -y 270 -defaultsOSRD
+preplace inst ENC_SAD_1 -pg 1 -lvl 3 -x 890 -y 410 -defaultsOSRD
+preplace inst ENC_header_Fifos -pg 1 -lvl 15 -x 5910 -y 200 -defaultsOSRD
+preplace inst Fifo_bypass_64 -pg 1 -lvl 8 -x 3350 -y 980 -defaultsOSRD
+preplace inst IPSEC_ENC -pg 1 -lvl 11 -x 4550 -y 430 -defaultsOSRD
+preplace inst MD_in_Valid_gen_0 -pg 1 -lvl 2 -x 490 -y 710 -defaultsOSRD
+preplace inst MD_in_Valid_gen_1 -pg 1 -lvl 17 -x 6500 -y 670 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 13 -x 5200 -y 420 -defaultsOSRD
+preplace inst axis_data_fifo_ENC_SAD -pg 1 -lvl 1 -x 140 -y 270 -defaultsOSRD
+preplace inst Bypass_width_convert -pg 1 -lvl 7 -x 2930 -y 960 -defaultsOSRD
+preplace inst axis_register_slice_0 -pg 1 -lvl 6 -x 2470 -y 470 -defaultsOSRD
+preplace inst axis_register_slice_1 -pg 1 -lvl 9 -x 3680 -y 450 -defaultsOSRD
+preplace inst byte_swapping_logic_0 -pg 1 -lvl 10 -x 4070 -y 760 -defaultsOSRD
+preplace inst calc_checksum_0 -pg 1 -lvl 17 -x 6500 -y 880 -defaultsOSRD
+preplace inst data_latch_block_0 -pg 1 -lvl 20 -x 7570 -y 550 -defaultsOSRD
+preplace inst esp_trailer_addition_0 -pg 1 -lvl 7 -x 2930 -y 460 -defaultsOSRD
+preplace inst metadata_extraction_1 -pg 1 -lvl 4 -x 1360 -y 810 -defaultsOSRD
+preplace inst pkt_forward_p4 -pg 1 -lvl 18 -x 6910 -y 580 -defaultsOSRD
+preplace inst ready_control_logic_0 -pg 1 -lvl 7 -x 2930 -y 220 -defaultsOSRD
+preplace inst tlast_read_en -pg 1 -lvl 14 -x 5550 -y 420 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 8 -x 3350 -y 400 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 17 -x 6500 -y 240 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 14 -x 5550 -y 60 -defaultsOSRD
+preplace inst xlconcat_2 -pg 1 -lvl 2 -x 490 -y 920 -defaultsOSRD
+preplace inst xlconstant_ENC_SAD_0 -pg 1 -lvl 1 -x 140 -y 910 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 16 -x 6180 -y 260 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 16 -x 6180 -y 360 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 19 -x 7270 -y 630 -defaultsOSRD
+preplace inst iv_seq_nmbr_cache_0 -pg 1 -lvl 10 -x 4070 -y 480 -defaultsOSRD
+preplace inst demux_logic_0 -pg 1 -lvl 5 -x 1940 -y 790 -defaultsOSRD
+preplace inst axis_dwidth_converter_0 -pg 1 -lvl 12 -x 4860 -y 400 -defaultsOSRD
+preplace netloc CLK_100M_in_1 1 0 18 NJ 810 NJ 810 630 650 1120J 570 NJ 570 2260J 600 NJ 600 3140J 580 3500J 590 NJ 590 NJ 590 NJ 590 NJ 590 NJ 590 NJ 590 NJ 590 6350J 570 6670J
+preplace netloc ENC_SAD_1_s_axis_tready 1 1 2 310 350 NJ
+preplace netloc ENC_SAD_hier_user_metadata_out_valid 1 3 1 1110 470n
+preplace netloc ENC_SAD_m_axis_tdata 1 3 2 NJ 350 1700
+preplace netloc ENC_SAD_m_axis_tkeep 1 3 2 NJ 370 1680
+preplace netloc ENC_SAD_m_axis_tlast 1 3 2 NJ 390 1660
+preplace netloc ENC_SAD_m_axis_tvalid 1 3 2 NJ 430 1620
+preplace netloc ENC_header_Fifos_ip_hdr 1 15 2 NJ 200 6340
+preplace netloc ENC_header_Fifos_mac_hdr 1 15 2 6070J 180 6290
+preplace netloc IPSEC_ENC_IV_prog_full 1 6 6 2680 130 NJ 130 NJ 130 NJ 130 NJ 130 4710
+preplace netloc IPSEC_ENC_Len_prog_full 1 6 6 2670 110 NJ 110 NJ 110 NJ 110 NJ 110 4720
+preplace netloc M00_AXIS_ACLK_1 1 0 20 -60 470 350 470 640 620 1140J 610 1690 560 2270 650 2710 680 3190 610 3510 610 3860 360 4290 230 4730 270 4980 -10 NJ -10 5760 50 NJ 50 6330 540 6660 800 7160J 570 7380
+preplace netloc MD_in_Valid_gen_0_metadata_valid 1 2 1 660 550n
+preplace netloc MD_in_Valid_gen_1_metadata_valid 1 17 1 6640 670n
+preplace netloc Op2_1 1 7 1 3170 410n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tlast 1 13 5 5390 290 5730J 470 NJ 470 6300 500 NJ
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tvalid 1 13 5 5400 310 5710J 440 NJ 440 6320 510 6670J
+preplace netloc axis_data_fifo_1_m_axis_tdata 1 13 5 5370J 280 5750J 430 NJ 430 NJ 430 6700
+preplace netloc axis_data_fifo_1_m_axis_tkeep 1 13 5 5380J 320 5740J 340 6060J 460 NJ 460 6690
+preplace netloc axis_data_fifo_1_m_axis_tuser 1 13 4 5420 340 5690J 420 NJ 420 6300J
+preplace netloc axis_data_fifo_ENC_SAD_m_axis_tdata 1 1 2 350 290 NJ
+preplace netloc axis_data_fifo_ENC_SAD_m_axis_tkeep 1 1 2 340 310 NJ
+preplace netloc axis_data_fifo_ENC_SAD_m_axis_tlast 1 1 2 330 330 NJ
+preplace netloc axis_data_fifo_ENC_SAD_m_axis_tvalid 1 1 2 320 370 NJ
+preplace netloc axis_register_slice_0_m_axis_tdata 1 6 1 2660 400n
+preplace netloc axis_register_slice_0_m_axis_tkeep 1 6 1 2680 420n
+preplace netloc axis_register_slice_0_m_axis_tlast 1 6 1 2700 440n
+preplace netloc axis_register_slice_0_m_axis_tvalid 1 6 1 2690 440n
+preplace netloc axis_register_slice_0_s_axis_tready 1 5 1 2220 440n
+preplace netloc axis_register_slice_1_s_axis_tready 1 6 3 2700 140 NJ 140 3530
+preplace netloc calc_checksum_0_data_out 1 17 1 6690 700n
+preplace netloc calc_checksum_0_valid_out 1 17 1 6700 720n
+preplace netloc clk_wiz_0_locked 1 0 20 -50 480 340 480 650 630 1160J 620 1720 550 2280 660 2720 650 3200 620 3530 620 3880 610 4280 210 4740 300 4970 300 NJ 300 5700J 480 NJ 480 6290 560 6650 780 7140J 550 7390
+preplace netloc data_latch_block_0_s_axis_tready 1 18 2 7120J 510 7410
+preplace netloc demux_logic_0_m1_axis_tdata 1 5 1 2160 460n
+preplace netloc demux_logic_0_m1_axis_tkeep 1 5 1 2210 480n
+preplace netloc demux_logic_0_m1_axis_tlast 1 5 1 2230 500n
+preplace netloc demux_logic_0_m1_axis_tvalid 1 5 1 2170 420n
+preplace netloc demux_logic_0_s_axis_tready 1 3 2 NJ 410 1630
+preplace netloc din2_1 1 4 11 1600 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 5420J 140 5680J
+preplace netloc din4_1 1 4 11 1640 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 5410J 130 NJ
+preplace netloc din_1 1 4 11 1610 120 NJ 120 NJ 120 NJ 120 NJ 120 NJ 120 NJ 120 4740J 150 NJ 150 NJ 150 NJ
+preplace netloc enc_input_formation_en_encryption 1 4 1 1590 700n
+preplace netloc enc_input_formation_vlan_hdr 1 4 10 1560 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc enc_input_formation_vlan_present 1 4 10 1580 100 NJ 100 NJ 100 NJ 100 NJ 100 NJ 100 NJ 100 NJ 100 NJ 100 5370J
+preplace netloc enc_sad_p4_metadata_1 1 3 1 1150 450n
+preplace netloc esp_trailer_addition_0_length_bytes_o 1 7 4 3160J 280 NJ 280 NJ 280 4340
+preplace netloc esp_trailer_addition_0_length_valid_o 1 7 4 3180J 290 NJ 290 NJ 290 4310
+preplace netloc esp_trailer_addition_0_m_axis_tkeep 1 7 2 3200J 470 3530
+preplace netloc esp_trailer_addition_0_s_axis_tready 1 6 1 2670 460n
+preplace netloc header_fifo_dout3 1 15 2 NJ 160 6360
+preplace netloc header_fifo_dout4 1 15 2 6050J 190 6350
+preplace netloc header_fifo_dout5 1 15 1 6070 240n
+preplace netloc iv_seq_nmbr_cache_0_eiv 1 10 5 4260 220 NJ 220 NJ 220 NJ 220 5750J
+preplace netloc iv_seq_nmbr_cache_0_eiv_fifo_wren 1 10 5 4270 240 NJ 240 NJ 240 NJ 240 5760J
+preplace netloc iv_seq_nmbr_cache_0_iv 1 10 1 4380 380n
+preplace netloc iv_seq_nmbr_cache_0_iv_fifo_wren 1 10 1 4350 400n
+preplace netloc iv_seq_nmbr_cache_0_spi_seq_nmbr 1 10 1 4320 340n
+preplace netloc iv_seq_nmbr_cache_0_spi_seq_nmbr_fifo_wren 1 10 1 4300 360n
+preplace netloc m_axis_tready1_1 1 7 1 3140 220n
+preplace netloc metadata_extraction_0_valid_out1 1 4 11 1730J 620 2180J 630 NJ 630 NJ 630 NJ 630 3840 370 4390 260 NJ 260 NJ 260 NJ 260 5750J
+preplace netloc metadata_extraction_1_ext_iv 1 4 6 1710 610 2190J 640 NJ 640 NJ 640 NJ 640 3870J
+preplace netloc metadata_extraction_1_int_iv 1 4 6 1650 320 NJ 320 NJ 320 NJ 320 NJ 320 3850J
+preplace netloc metadata_extraction_1_key 1 4 7 1570 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 4330J
+preplace netloc metadata_extraction_1_spi 1 4 6 1670 600 2240J 620 NJ 620 3150J 590 3520J 580 3850J
+preplace netloc pkt_forward_p4_m_axis_tdata 1 18 2 NJ 500 N
+preplace netloc pkt_forward_p4_m_axis_tkeep 1 18 2 NJ 520 N
+preplace netloc pkt_forward_p4_m_axis_tlast 1 18 2 NJ 540 N
+preplace netloc pkt_forward_p4_m_axis_tvalid 1 18 2 7150J 560 N
+preplace netloc pkt_forward_p4_user_metadata_out 1 18 1 7120J 600n
+preplace netloc rd_en_1 1 14 1 5680 230n
+preplace netloc reset_latch_dyn_0_rstn_100M 1 0 18 -30J 600 NJ 600 670 640 1130J 580 NJ 580 2200J 670 NJ 670 NJ 670 NJ 670 NJ 670 4280J 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 6670J
+preplace netloc s_axis_tdata1_1 1 7 2 3150J 330 3510
+preplace netloc s_axis_tlast1_1 1 7 2 3190J 480 N
+preplace netloc sdnet_0_s_axis_tready 1 13 5 5410 330 5720J 350 6050J 450 6310 520 NJ
+preplace netloc sdnet_0_user_extern_out 1 16 3 6360 970 NJ 970 7130
+preplace netloc sdnet_0_user_extern_out_valid 1 16 3 6360 790 NJ 790 7120
+preplace netloc util_vector_logic_1_Res 1 0 15 -40J 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 2660J 300 NJ 300 NJ 300 3870 300 4370 250 NJ 250 NJ 250 NJ 250 NJ
+preplace netloc util_vector_logic_1_Res_1 1 8 1 N 400
+preplace netloc xlconcat_0_dout 1 17 1 6680 240n
+preplace netloc xlconcat_0_dout_1 1 14 1 5750 60n
+preplace netloc xlconcat_2_dout 1 2 1 680J 530n
+preplace netloc xlconstant_ENC_SAD_0_dout 1 1 1 330J 910n
+preplace netloc xlslice_0_Dout 1 16 1 N 260
+preplace netloc xlslice_1_Dout 1 16 1 6310 300n
+preplace netloc xlslice_2_Dout 1 19 1 7400 480n
+preplace netloc IPSEC_ENC_M_AXIS 1 11 1 4750 380n
+preplace netloc demux_logic_0_m0_axis 1 5 2 2150 940 NJ
+preplace netloc axi_interconnect_0_M01_AXI 1 0 3 NJ 390 NJ 390 NJ
+preplace netloc axis_register_slice_1_M_AXIS 1 9 1 3830 450n
+preplace netloc data_latch_block_0_m_axis 1 20 1 NJ 550
+preplace netloc axi_interconnect_0_M02_AXI 1 0 18 NJ 610 NJ 610 NJ 610 1100J 590 NJ 590 2250J 610 NJ 610 3170J 600 NJ 600 NJ 600 NJ 600 4730J 550 NJ 550 NJ 550 NJ 550 NJ 550 NJ 550 6670J
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 7 1 N 960
+preplace netloc Conn1 1 0 1 NJ 250
+preplace netloc axis_dwidth_converter_0_M_AXIS1 1 12 1 N 400
+preplace netloc Fifo_bypass_64_M_AXIS 1 8 13 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ
+preplace netloc byte_swapping_logic_0_m_axis 1 10 1 4360 320n
+levelinfo -pg 1 -80 140 490 890 1360 1940 2470 2930 3350 3680 4070 4550 4860 5200 5550 5910 6180 6500 6910 7270 7570 7750
+pagesize -pg 1 -db -bbox -sgen -240 -180 7920 1160
+"
+}
+0

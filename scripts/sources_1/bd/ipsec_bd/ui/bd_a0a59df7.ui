@@ -1,0 +1,115 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.430342",
+   "Default View_TopLeft":"-258,-42",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port pcie_clk -pg 1 -lvl 0 -x -40 -y 1170 -defaultsOSRD
+preplace port pcie_mgt_0 -pg 1 -lvl 8 -x 3310 -y 1310 -defaultsOSRD
+preplace port rx_AXIS_00 -pg 1 -lvl 0 -x -40 -y 1260 -defaultsOSRD
+preplace port tx_AXIS_00 -pg 1 -lvl 8 -x 3310 -y 1440 -defaultsOSRD
+preplace port pcie_rstn -pg 1 -lvl 0 -x -40 -y 1190 -defaultsOSRD
+preplace port tx_resend_pause_00_o -pg 1 -lvl 8 -x 3310 -y 1030 -defaultsOSRD
+preplace port s_axis_aresetn_0 -pg 1 -lvl 0 -x -40 -y 1310 -defaultsOSRD
+preplace port rx_aclk_00 -pg 1 -lvl 0 -x -40 -y 1290 -defaultsOSRD
+preplace port tx_aclk_00 -pg 1 -lvl 0 -x -40 -y 1350 -defaultsOSRD
+preplace portBus tx_pause_req_00_o -pg 1 -lvl 8 -x 3310 -y 1010 -defaultsOSRD
+preplace portBus stat_tx_pause_valid_00_i -pg 1 -lvl 0 -x -40 -y 1330 -defaultsOSRD
+preplace portBus stat_rx_pause_req_00_i -pg 1 -lvl 0 -x -40 -y 1370 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 450 -y 550 -defaultsOSRD
+preplace inst header_fifo -pg 1 -lvl 3 -x 950 -y 270 -defaultsOSRD
+preplace inst ENC_SAD -pg 1 -lvl 7 -x 3090 -y 780 -defaultsOSRD
+preplace inst dec_input_formation -pg 1 -lvl 6 -x 2520 -y 570 -defaultsOSRD
+preplace inst enc -pg 1 -lvl 3 -x 950 -y 630 -defaultsOSRD
+preplace inst packet_formation -pg 1 -lvl 4 -x 1440 -y 610 -defaultsOSRD
+preplace inst packet_fwd -pg 1 -lvl 5 -x 1990 -y 1470 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1440 -y 1100 -defaultsOSRD
+preplace inst qdma -pg 1 -lvl 3 -x 950 -y 1180 -defaultsOSRD
+preplace inst from_MAC00_is_MAC0 -pg 1 -lvl 6 -x 2520 -y 1010 -defaultsOSRD
+preplace inst to_MAC00_is_MAC0 -pg 1 -lvl 6 -x 2520 -y 1440 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 130 -y 1000 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 2 -x 450 -y 650 -defaultsOSRD
+preplace inst demux_logic_0 -pg 1 -lvl 5 -x 1990 -y 380 -defaultsOSRD
+preplace inst slow_path_flag_gen_0 -pg 1 -lvl 2 -x 450 -y 790 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x 130 -y 810 -defaultsOSRD
+preplace inst Register_interface_0 -pg 1 -lvl 5 -x 1990 -y 1100 -defaultsOSRD
+preplace netloc ENC_SAD_m_axis_tdata 1 4 4 1780 200 NJ 200 NJ 200 3290
+preplace netloc ENC_SAD_m_axis_tkeep 1 4 4 1790 210 NJ 210 NJ 210 3280
+preplace netloc ENC_SAD_m_axis_tlast 1 4 4 1800 220 NJ 220 NJ 220 3270
+preplace netloc demux_logic_0_s_axis_tready 1 4 3 1750 180 NJ 180 2870J
+preplace netloc ENC_SAD_m_axis_tvalid 1 4 4 1800 830 2180J 860 2830J 880 3280
+preplace netloc util_vector_logic_0_Res 1 2 1 630 180n
+preplace netloc esp_trailer_addition_0_length_bytes_o 1 2 5 750 850 1220J 830 1690J 820 NJ 820 2830
+preplace netloc esp_trailer_addition_0_length_valid_o 1 2 5 770 840 NJ 840 NJ 840 NJ 840 2820
+preplace netloc metadata_extraction_0_valid_out1 1 1 6 260 490 670 80 NJ 80 NJ 80 NJ 80 2740
+preplace netloc din2_1 1 2 5 770 40 NJ 40 NJ 40 NJ 40 2770
+preplace netloc din_1 1 2 5 740 20 NJ 20 NJ 20 NJ 20 2810
+preplace netloc din2_2 1 2 5 780 100 NJ 100 NJ 100 NJ 100 2750
+preplace netloc enc_input_formation_hier_pkt_len 1 4 3 1770 190 NJ 190 2730
+preplace netloc sys_rst_n_0_1 1 0 3 NJ 1190 NJ 1190 NJ
+preplace netloc mac_flow_control_0_o_ctl_tx_pause_req 1 6 2 NJ 1010 NJ
+preplace netloc mac_flow_control_0_o_ctl_tx_resend_pause 1 6 2 NJ 1030 NJ
+preplace netloc i_stat_tx_pause_valid_0_1 1 0 6 -10J 910 NJ 910 NJ 910 NJ 910 1800J 890 2230J
+preplace netloc s_axis_aresetn_0_1 1 0 6 NJ 1310 NJ 1310 NJ 1310 NJ 1310 NJ 1310 2250
+preplace netloc rx_aclk_00 1 0 6 0J 930 NJ 930 NJ 930 NJ 930 1790J 880 2240J
+preplace netloc M00_AXIS_ACLK_0_1 1 0 6 NJ 1350 NJ 1350 NJ 1350 NJ 1350 1790J 1330 2200J
+preplace netloc Din_0_1 1 0 6 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ 1370 2180J
+preplace netloc clk_wiz_0_locked 1 1 6 240 890 690 950 1200 410 1710 550 2210 810 2860J
+preplace netloc util_vector_logic_1_Res 1 2 1 N 650
+preplace netloc clk_wiz_0_clk_out1 1 1 6 250 920 660 940 1190 400 1740 540 2270 830 2850J
+preplace netloc enc_input_formation_vlan_present 1 2 5 790 70 NJ 70 NJ 70 NJ 70 2790
+preplace netloc enc_input_formation_vlan_hdr 1 2 5 750 60 NJ 60 NJ 60 NJ 60 2800
+preplace netloc qdma_axi_aresetn 1 0 4 10 1080 NJ 1080 NJ 1080 1260
+preplace netloc qdma_axi_aclk 1 0 4 20 1070 NJ 1070 NJ 1070 1250
+preplace netloc Register_interface_0_cnt_rst 1 4 2 1800 1320 2180
+preplace netloc s_axis_tdata1_1 1 2 5 790 830 1210J 820 1680J 800 NJ 800 2790
+preplace netloc s_axis_tlast1_1 1 2 5 760 880 NJ 880 1770J 870 NJ 870 2800
+preplace netloc m_axis_tready1_1 1 3 3 1120J 430 1730J 560 2180
+preplace netloc Op2_1 1 2 5 780 870 1110J 160 NJ 160 NJ 160 2780
+preplace netloc mode_select_i_1 1 5 1 2220 980n
+preplace netloc ENC_SAD_user_metadata_out 1 5 3 2290 880 2740J 900 3290
+preplace netloc ENC_SAD_user_metadata_out_valid 1 5 3 2300 890 NJ 890 3270
+preplace netloc enc_input_formation_ingress 1 2 5 740 820 1140J 810 1660J 790 NJ 790 2740
+preplace netloc enc_input_formation_en_decryption 1 4 3 1760 230 NJ 230 2760
+preplace netloc din5_1 1 2 5 720 860 NJ 860 1670J 780 NJ 780 2730
+preplace netloc din_2 1 2 5 710 30 NJ 30 NJ 30 NJ 30 2850
+preplace netloc enc_input_formation_aad 1 0 7 -20 480 NJ 480 640 50 NJ 50 NJ 50 NJ 50 2840
+preplace netloc slow_path_flag_gen_0_flag_fifo_wren 1 2 1 650 360n
+preplace netloc slow_path_flag_gen_0_slow_path_flag 1 2 1 680 380n
+preplace netloc xlslice_0_Dout 1 1 1 NJ 810
+preplace netloc Register_interface_0_slow_path_cnt 1 1 5 270 1300 NJ 1300 NJ 1300 NJ 1300 2190
+preplace netloc pkt_formation_logic_0_ciphertxt_fifo_rden_o 1 2 3 730 920 NJ 920 1650
+preplace netloc pkt_formation_logic_0_tag_fifo_rden_o 1 2 3 730 90 NJ 90 1640
+preplace netloc pkt_formation_logic_0_hdr_fifo_rden_o 1 2 3 700 890 NJ 890 1620
+preplace netloc pkt_formation_logic_0_len_fifo_rden_o 1 2 3 790 430 1100J 420 1630
+preplace netloc header_fifo_dout5 1 3 1 1230 260n
+preplace netloc enc_hier_dout 1 3 1 1100 550n
+preplace netloc header_fifo_hier_dout3 1 3 1 1210 280n
+preplace netloc header_fifo_hier_dout 1 3 1 1260 220n
+preplace netloc header_fifo_hier_dout2 1 3 1 1220 240n
+preplace netloc enc_hier_dout1 1 3 1 1130 630n
+preplace netloc enc_hier_dout2 1 3 1 1170 650n
+preplace netloc enc_hier_empty1 1 3 1 1150 620n
+preplace netloc enc_hier_empty 1 3 1 1160 600n
+preplace netloc header_fifo_dout1 1 3 1 1180 300n
+preplace netloc header_fifo_dout4 1 3 1 1140 320n
+preplace netloc S_AXIS_0_1 1 0 6 -20J 900 NJ 900 NJ 900 NJ 900 NJ 900 2250J
+preplace netloc demux_logic_0_m1_axis 1 5 1 2280 390n
+preplace netloc axi_interconnect_0_M02_AXI 1 4 1 1630 1120n
+preplace netloc tx_flow_control_0_m_axis 1 6 2 NJ 1440 NJ
+preplace netloc S00_AXI_1 1 3 1 1240 1000n
+preplace netloc S00_AXIS_1 1 5 1 2260 1370n
+preplace netloc demux_logic_0_m0_axis 1 5 1 2300 370n
+preplace netloc axi_interconnect_0_M01_AXI 1 4 3 1720J 170 NJ 170 2880
+preplace netloc packet_formation_M_AXIS 1 4 1 1700 560n
+preplace netloc S_AXIS_1 1 6 1 2840 760n
+preplace netloc CLK_IN_D_0_1 1 0 3 NJ 1170 NJ 1170 NJ
+preplace netloc qdma_0_pcie_mgt 1 3 5 1230J 850 NJ 850 NJ 850 2820J 910 3280J
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 N 1080
+preplace netloc packet_formation_M_AXIS1 1 4 2 1730J 1340 2190
+levelinfo -pg 1 -40 130 450 950 1440 1990 2520 3090 3310
+pagesize -pg 1 -db -bbox -sgen -310 0 3530 1560
+"
+}
+0

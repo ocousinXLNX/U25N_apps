@@ -1,0 +1,835 @@
+{
+  "program" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+  "__meta__" : {
+    "version" : [2, 2],
+    "compiler" : "p4c-sdnet"
+  },
+  "header_types" : [
+    {
+      "name" : "scalars_0",
+      "id" : 0,
+      "is_struct" : false,
+      "fields" : [
+        ["tmp", 1, false],
+        ["tmp_0", 32, false],
+        ["tmp_eth_addr", 48, false],
+        ["tmp_ip_addr", 32, false],
+        ["tmp_udp_port", 16, false],
+        ["_padding", 7, false]
+      ]
+    },
+    {
+      "name" : "standard_metadata_t",
+      "id" : 1,
+      "is_struct" : true,
+      "fields" : [
+        ["drop", 1, false],
+        ["ingress_timestamp", 64, false],
+        ["parser_error", 3, false],
+        ["_padding_0", 4, false]
+      ]
+    },
+    {
+      "name" : "eth_mac_t",
+      "id" : 2,
+      "is_struct" : false,
+      "fields" : [
+        ["dmac", 48, false],
+        ["smac", 48, false],
+        ["type", 16, false]
+      ]
+    },
+    {
+      "name" : "ipv4_t",
+      "id" : 3,
+      "is_struct" : false,
+      "fields" : [
+        ["version", 4, false],
+        ["hdr_len", 4, false],
+        ["tos", 8, false],
+        ["length", 16, false],
+        ["id", 16, false],
+        ["flags", 3, false],
+        ["offset", 13, false],
+        ["ttl", 8, false],
+        ["protocol", 8, false],
+        ["hdr_chk", 16, false],
+        ["src", 32, false],
+        ["dst", 32, false]
+      ]
+    },
+    {
+      "name" : "ipv4_opt_t",
+      "id" : 4,
+      "is_struct" : false,
+      "fields" : [
+        ["options", "*"]
+      ],
+      "max_length" : 40
+    },
+    {
+      "name" : "udp_t",
+      "id" : 5,
+      "is_struct" : false,
+      "fields" : [
+        ["src_port", 16, false],
+        ["dst_port", 16, false],
+        ["length", 16, false],
+        ["checksum", 16, false]
+      ]
+    },
+    {
+      "name" : "vlan_t",
+      "id" : 6,
+      "is_struct" : false,
+      "fields" : [
+        ["pcp", 3, false],
+        ["cfi", 1, false],
+        ["vid", 12, false],
+        ["tpid", 16, false]
+      ]
+    },
+    {
+      "name" : "metadata",
+      "id" : 7,
+      "is_struct" : true,
+      "fields" : [
+        ["echo_port", 16, false]
+      ]
+    }
+  ],
+  "headers" : [
+    {
+      "name" : "scalars",
+      "id" : 0,
+      "header_type" : "scalars_0",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "standard_metadata_t",
+      "id" : 1,
+      "header_type" : "standard_metadata_t",
+      "metadata" : true,
+      "pi_omit" : true
+    },
+    {
+      "name" : "eth",
+      "id" : 2,
+      "header_type" : "eth_mac_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "ipv4",
+      "id" : 3,
+      "header_type" : "ipv4_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "ipv4opt",
+      "id" : 4,
+      "header_type" : "ipv4_opt_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "udp",
+      "id" : 5,
+      "header_type" : "udp_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "vlan[0]",
+      "id" : 6,
+      "header_type" : "vlan_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "vlan[1]",
+      "id" : 7,
+      "header_type" : "vlan_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "metadata",
+      "id" : 8,
+      "header_type" : "metadata",
+      "metadata" : true,
+      "pi_omit" : true
+    }
+  ],
+  "header_stacks" : [
+    {
+      "name" : "vlan",
+      "id" : 0,
+      "header_type" : "vlan_t",
+      "size" : 2,
+      "header_ids" : [6, 7]
+    }
+  ],
+  "header_union_types" : [],
+  "header_unions" : [],
+  "header_union_stacks" : [],
+  "field_lists" : [],
+  "errors" : [
+    ["NoError", 0],
+    ["PacketTooShort", 1],
+    ["NoMatch", 2],
+    ["StackOutOfBounds", 3],
+    ["HeaderTooShort", 4],
+    ["ParserTimeout", 5],
+    ["InvalidIPpacket", 6]
+  ],
+  "enums" : [],
+  "parsers" : [
+    {
+      "name" : "parser",
+      "id" : 0,
+      "init_state" : "start",
+      "parse_states" : [
+        {
+          "name" : "start",
+          "id" : 0,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "eth"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x8100",
+              "mask" : null,
+              "next_state" : "parse_vlan"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0800",
+              "mask" : null,
+              "next_state" : "parse_ipv4"
+            },
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["eth", "type"]
+            }
+          ]
+        },
+        {
+          "name" : "parse_vlan",
+          "id" : 1,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "stack",
+                  "value" : "vlan"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x8100",
+              "mask" : null,
+              "next_state" : "parse_vlan"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0800",
+              "mask" : null,
+              "next_state" : "parse_ipv4"
+            },
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "stack_field",
+              "value" : ["vlan", "tpid"]
+            }
+          ]
+        },
+        {
+          "name" : "parse_ipv4",
+          "id" : 2,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "ipv4"
+                }
+              ],
+              "op" : "extract"
+            },
+            {
+              "parameters" : [
+                {
+                  "type" : "field",
+                  "value" : ["scalars", "tmp"]
+                },
+                {
+                  "type" : "expression",
+                  "value" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "b2d",
+                      "left" : null,
+                      "right" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "and",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "==",
+                              "left" : {
+                                "type" : "field",
+                                "value" : ["ipv4", "version"]
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x04"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : ">=",
+                              "left" : {
+                                "type" : "field",
+                                "value" : ["ipv4", "hdr_len"]
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0x05"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "op" : "set"
+            },
+            {
+              "parameters" : [
+                {
+                  "type" : "expression",
+                  "value" : {
+                    "op" : "d2b",
+                    "left" : null,
+                    "right" : {
+                      "type" : "field",
+                      "value" : ["scalars", "tmp"]
+                    }
+                  }
+                },
+                {
+                  "type" : "hexstr",
+                  "value" : "0x6"
+                }
+              ],
+              "op" : "verify"
+            },
+            {
+              "parameters" : [
+                {
+                  "type" : "field",
+                  "value" : ["scalars", "tmp_0"]
+                },
+                {
+                  "type" : "expression",
+                  "value" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "<<",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "&",
+                              "left" : {
+                                "type" : "expression",
+                                "value" : {
+                                  "op" : "+",
+                                  "left" : {
+                                    "type" : "expression",
+                                    "value" : {
+                                      "op" : "&",
+                                      "left" : {
+                                        "type" : "field",
+                                        "value" : ["ipv4", "hdr_len"]
+                                      },
+                                      "right" : {
+                                        "type" : "hexstr",
+                                        "value" : "0xffffffff"
+                                      }
+                                    }
+                                  },
+                                  "right" : {
+                                    "type" : "hexstr",
+                                    "value" : "0xfffffffb"
+                                  }
+                                }
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0xffffffff"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0x5"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffffffff"
+                      }
+                    }
+                  }
+                }
+              ],
+              "op" : "set"
+            },
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "ipv4opt"
+                },
+                {
+                  "type" : "expression",
+                  "value" : {
+                    "type" : "field",
+                    "value" : ["scalars", "tmp_0"]
+                  }
+                }
+              ],
+              "op" : "extract_VL"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x11",
+              "mask" : null,
+              "next_state" : "parse_udp"
+            },
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["ipv4", "protocol"]
+            }
+          ]
+        },
+        {
+          "name" : "parse_udp",
+          "id" : 3,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "udp"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : []
+        }
+      ]
+    }
+  ],
+  "parse_vsets" : [],
+  "deparsers" : [
+    {
+      "name" : "deparser",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+        "line" : 212,
+        "column" : 8,
+        "source_fragment" : "MyDeparser"
+      },
+      "start" : "node_7",
+      "emits" : [
+        {
+          "name" : "node_7",
+          "id" : 0,
+          "sequence_point" : true,
+          "header" : "eth",
+          "next" : "node_8"
+        },
+        {
+          "name" : "node_8",
+          "id" : 1,
+          "sequence_point" : true,
+          "header" : "vlan[0]",
+          "next" : "node_9"
+        },
+        {
+          "name" : "node_9",
+          "id" : 2,
+          "sequence_point" : true,
+          "header" : "vlan[1]",
+          "next" : "node_10"
+        },
+        {
+          "name" : "node_10",
+          "id" : 3,
+          "sequence_point" : true,
+          "header" : "ipv4",
+          "next" : "node_11"
+        },
+        {
+          "name" : "node_11",
+          "id" : 4,
+          "sequence_point" : true,
+          "header" : "ipv4opt",
+          "next" : "node_12"
+        },
+        {
+          "name" : "node_12",
+          "id" : 5,
+          "sequence_point" : true,
+          "header" : "udp",
+          "next" : null
+        }
+      ],
+      "conditionals" : []
+    }
+  ],
+  "meter_arrays" : [],
+  "counter_arrays" : [],
+  "register_arrays" : [],
+  "calculations" : [],
+  "learn_lists" : [],
+  "actions" : [
+    {
+      "name" : "MyProcessing.echo_packet",
+      "id" : 0,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_eth_addr"]
+            },
+            {
+              "type" : "field",
+              "value" : ["eth", "dmac"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 176,
+            "column" : 8,
+            "source_fragment" : "tmp_eth_addr = hdr.eth.dmac"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["eth", "dmac"]
+            },
+            {
+              "type" : "field",
+              "value" : ["eth", "smac"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 177,
+            "column" : 8,
+            "source_fragment" : "hdr.eth.dmac = hdr.eth.smac"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["eth", "smac"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_eth_addr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 178,
+            "column" : 8,
+            "source_fragment" : "hdr.eth.smac = tmp_eth_addr"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_ip_addr"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dst"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 182,
+            "column" : 8,
+            "source_fragment" : "tmp_ip_addr = hdr.ipv4.dst"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["ipv4", "dst"]
+            },
+            {
+              "type" : "field",
+              "value" : ["ipv4", "src"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 183,
+            "column" : 8,
+            "source_fragment" : "hdr.ipv4.dst = hdr.ipv4.src"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["ipv4", "src"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_ip_addr"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 184,
+            "column" : 8,
+            "source_fragment" : "hdr.ipv4.src = tmp_ip_addr"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_udp_port"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "dst_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 188,
+            "column" : 8,
+            "source_fragment" : "tmp_udp_port = hdr.udp.dst_port"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["udp", "dst_port"]
+            },
+            {
+              "type" : "field",
+              "value" : ["udp", "src_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 189,
+            "column" : 8,
+            "source_fragment" : "hdr.udp.dst_port = hdr.udp.src_port"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["udp", "src_port"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_udp_port"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 190,
+            "column" : 8,
+            "source_fragment" : "hdr.udp.src_port = tmp_udp_port"
+          }
+        }
+      ]
+    }
+  ],
+  "pipelines" : [
+    {
+      "name" : "ingress",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+        "line" : 167,
+        "column" : 8,
+        "source_fragment" : "MyProcessing"
+      },
+      "init_table" : "node_2",
+      "tables" : [
+        {
+          "name" : "tbl_echo_packet",
+          "id" : 0,
+          "sequence_point" : false,
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [0],
+          "actions" : ["MyProcessing.echo_packet"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "MyProcessing.echo_packet" : null
+          },
+          "default_entry" : {
+            "action_id" : 0,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        }
+      ],
+      "action_profiles" : [],
+      "conditionals" : [
+        {
+          "name" : "node_2",
+          "id" : 0,
+          "sequence_point" : true,
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 200,
+            "column" : 12,
+            "source_fragment" : "hdr.udp.isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["udp", "$valid$"]
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "node_3",
+          "if_else" : false,
+          "converge" : null
+        },
+        {
+          "name" : "node_3",
+          "id" : 1,
+          "sequence_point" : false,
+          "source_info" : {
+            "filename" : "/scratch/kestera/projects/DFX/U25N_DFX/dynamic/p4_example/p4_example.srcs/sources_1/echo.p4",
+            "line" : 201,
+            "column" : 16,
+            "source_fragment" : "hdr.udp.dst_port == meta.echo_port"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "==",
+              "left" : {
+                "type" : "field",
+                "value" : ["udp", "dst_port"]
+              },
+              "right" : {
+                "type" : "field",
+                "value" : ["metadata", "echo_port"]
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "tbl_echo_packet",
+          "if_else" : false,
+          "converge" : null
+        }
+      ]
+    }
+  ],
+  "checksums" : [],
+  "force_arith" : [],
+  "extern_instances" : [],
+  "field_aliases" : []
+}

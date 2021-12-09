@@ -1,0 +1,142 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.780186",
+   "Default View_TopLeft":"5444,37",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port IPSEC_DEC_BYPASS_Path -pg 1 -lvl 18 -x 7130 -y 840 -defaultsOSRD
+preplace port S00_AXIS_MAC0 -pg 1 -lvl 0 -x -170 -y 730 -defaultsOSRD
+preplace port S01_AXIS_MAC1 -pg 1 -lvl 0 -x -170 -y 750 -defaultsOSRD
+preplace port m0_axis_from_dec -pg 1 -lvl 18 -x 7130 -y 600 -defaultsOSRD
+preplace port s_axi_sad_in -pg 1 -lvl 0 -x -170 -y 450 -defaultsOSRD
+preplace port s_axi_to_pkt_frwd -pg 1 -lvl 0 -x -170 -y 670 -defaultsOSRD
+preplace port CLK_100M_in -pg 1 -lvl 0 -x -170 -y 1030 -defaultsOSRD
+preplace port S00_AXIS_ARESETN -pg 1 -lvl 0 -x -170 -y 790 -defaultsOSRD
+preplace port cam_mem_aresetn -pg 1 -lvl 0 -x -170 -y 870 -defaultsOSRD
+preplace port clk_200M -pg 1 -lvl 0 -x -170 -y 770 -defaultsOSRD
+preplace port clk_250M -pg 1 -lvl 0 -x -170 -y 850 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x -170 -y 1140 -defaultsOSRD
+preplace port srst -pg 1 -lvl 0 -x -170 -y 1160 -defaultsOSRD
+preplace inst DEC_SAD -pg 1 -lvl 4 -x 1220 -y 470 -defaultsOSRD
+preplace inst MD_in_Valid_gen_1 -pg 1 -lvl 15 -x 6040 -y 340 -defaultsOSRD
+preplace inst Silex_AES_GCM_DEC -pg 1 -lvl 12 -x 4740 -y 140 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 8 -x 2920 -y 940 -defaultsOSRD
+preplace inst axis_dwidth_converter_0 -pg 1 -lvl 7 -x 2590 -y 920 -defaultsOSRD
+preplace inst axis_interconnect_1 -pg 1 -lvl 1 -x 70 -y 840 -defaultsOSRD
+preplace inst axis_register_slice_0 -pg 1 -lvl 7 -x 2590 -y 570 -defaultsOSRD
+preplace inst axis_register_slice_1 -pg 1 -lvl 10 -x 3660 -y 510 -defaultsOSRD
+preplace inst calc_checksum_0 -pg 1 -lvl 15 -x 6040 -y 730 -defaultsOSRD
+preplace inst data_latch_block_1 -pg 1 -lvl 17 -x 6950 -y 600 -defaultsOSRD
+preplace inst header_fifo -pg 1 -lvl 11 -x 4140 -y 790 -defaultsOSRD
+preplace inst metadata_extraction_1 -pg 1 -lvl 5 -x 1720 -y 430 -defaultsOSRD
+preplace inst packet_length_calc_0 -pg 1 -lvl 14 -x 5568 -y 200 -defaultsOSRD
+preplace inst pkt_frwd -pg 1 -lvl 16 -x 6529 -y 630 -defaultsOSRD
+preplace inst ready_control_logic_0 -pg 1 -lvl 8 -x 2920 -y 250 -defaultsOSRD
+preplace inst sad_valid -pg 1 -lvl 9 -x 3300 -y 460 -defaultsOSRD
+preplace inst slwpath_const_val_0 -pg 1 -lvl 14 -x 5568 -y 1000 -defaultsOSRD
+preplace inst tlast_read_en_0 -pg 1 -lvl 10 -x 3660 -y 290 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 15 -x 6040 -y 940 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 3 -x 810 -y 1070 -defaultsOSRD
+preplace inst xlconstant_ENC_SAD_0 -pg 1 -lvl 2 -x 420 -y 1080 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 14 -x 5568 -y 900 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 14 -x 5568 -y 800 -defaultsOSRD
+preplace inst MD_in_Valid_gen_0 -pg 1 -lvl 3 -x 810 -y 770 -defaultsOSRD
+preplace inst byte_swapping_logic_0 -pg 1 -lvl 11 -x 4140 -y 340 -defaultsOSRD
+preplace inst data_latch_block_0 -pg 1 -lvl 2 -x 420 -y 870 -defaultsOSRD
+preplace inst esp_tag_rmv_0 -pg 1 -lvl 8 -x 2920 -y 520 -defaultsOSRD
+preplace inst axis_dwidth_converter_1 -pg 1 -lvl 13 -x 5200 -y 190 -defaultsOSRD
+preplace inst demux_logic_0 -pg 1 -lvl 6 -x 2210 -y 840 -defaultsOSRD
+preplace netloc CLK_100M_in_1 1 0 16 -140J 630 NJ 630 NJ 630 990 690 1470J 680 2040J 670 NJ 670 NJ 670 3100J 640 3470J 650 3960J 620 NJ 620 NJ 620 NJ 620 NJ 620 6210J
+preplace netloc DEC_SAD_m_axis_tdata 1 4 2 1480J 690 1960
+preplace netloc DEC_SAD_m_axis_tkeep 1 4 2 1490J 640 1970
+preplace netloc DEC_SAD_m_axis_tlast 1 4 2 1470J 650 1950
+preplace netloc DEC_SAD_m_axis_tvalid 1 4 2 1440J 700 1940
+preplace netloc DEC_SAD_s_axis_tready 1 2 2 660 410 NJ
+preplace netloc DEC_SAD_user_metadata_out 1 4 1 1430 420n
+preplace netloc DEC_SAD_user_metadata_out_valid 1 4 1 1460 440n
+preplace netloc MD_in_Valid_gen_0_metadata_valid 1 3 1 980 610n
+preplace netloc MD_in_Valid_gen_1_metadata_valid 1 15 1 6230 340n
+preplace netloc Net 1 0 17 -100 650 240 750 640 870 960 720 NJ 720 2030 620 2460 680 2720 710 3140 630 3460 210 3860 220 4420 280 4970 110 5320 320 5820 440 6270 410 6780
+preplace netloc Net1 1 0 17 -90 660 230 730 650 880 950 730 NJ 730 2020 610 2430 490 2700 720 N 720 3510 720 3920 250 4410 290 4980 270 5330 330 5850 450 6290 420 6770
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tlast_1 1 9 7 3470 180 NJ 180 4340J 350 NJ 350 NJ 350 5840 220 6280
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tvalid_1 1 9 7 3510 200 NJ 200 4330J 340 NJ 340 NJ 340 5770 230 6260
+preplace netloc S00_AXIS_ACLK_1 1 0 1 -110 770n
+preplace netloc Silex_AES_GCM_DEC_iv_full_not 1 7 6 2700 120 NJ 120 NJ 120 NJ 120 4370J 310 4950
+preplace netloc Silex_AES_GCM_DEC_len_full_not 1 7 6 2710 130 NJ 130 NJ 130 NJ 130 4350J 300 4930
+preplace netloc Silex_AES_GCM_DEC_tag_from_pkt_rden_o 1 10 3 3970 430 NJ 430 4940
+preplace netloc axis_data_fifo_2_m_axis_tlast 1 2 2 630 390 NJ
+preplace netloc axis_data_fifo_2_m_axis_tvalid 1 2 2 670 430 NJ
+preplace netloc axis_register_slice_1_s_axis_tready 1 7 3 2730 680 NJ 680 3480J
+preplace netloc calc_checksum_0_data_out 1 15 1 6180 740n
+preplace netloc calc_checksum_0_valid_out 1 15 1 6190 720n
+preplace netloc data_latch_block_0_m_axis_tdata 1 2 2 600 350 NJ
+preplace netloc data_latch_block_0_m_axis_tdest 1 2 1 610 830n
+preplace netloc data_latch_block_0_m_axis_tkeep 1 2 2 620 370 NJ
+preplace netloc data_latch_block_1_s_axis_tready 1 16 1 6760 610n
+preplace netloc demux_logic_0_s_axis_tready 1 4 2 1450J 710 1930
+preplace netloc esp_tag_rmv_0_m_axis_tag 1 8 3 3140 620 3490J 680 NJ
+preplace netloc esp_tag_rmv_0_m_axis_tag_valid 1 8 3 3130J 690 NJ 690 3900
+preplace netloc esp_tag_rmv_0_m_axis_tdata 1 8 2 3110J 530 3450
+preplace netloc esp_tag_rmv_0_m_axis_tkeep 1 8 2 3140J 540 3470
+preplace netloc esp_tag_rmv_0_m_axis_tlast 1 8 2 3130J 550 3510
+preplace netloc esp_tag_rmv_0_m_axis_tvalid 1 8 1 3120 470n
+preplace netloc hdr_rd_en_1 1 10 1 3950 290n
+preplace netloc header_fifo_ingress_o 1 11 4 4400J 740 NJ 740 NJ 740 5780
+preplace netloc header_fifo_ip_hdr_o 1 11 4 4390J 720 NJ 720 NJ 720 5800
+preplace netloc header_fifo_mac_hdr_o 1 11 4 4420J 730 NJ 730 NJ 730 5770
+preplace netloc header_fifo_tag_sad_o 1 11 1 4380 230n
+preplace netloc header_fifo_vlan_vlan_present 1 11 3 NJ 830 NJ 830 5320
+preplace netloc metadata_extraction_1_aad 1 5 7 1930 140 NJ 140 NJ 140 NJ 140 NJ 140 3870J 210 NJ
+preplace netloc metadata_extraction_1_dec_valid_out 1 5 7 1990J 600 2450J 700 NJ 700 NJ 700 NJ 700 3890 150 NJ
+preplace netloc metadata_extraction_1_en_decryption 1 5 1 1980 330n
+preplace netloc metadata_extraction_1_ingress 1 5 6 2000 640 2400J 730 NJ 730 NJ 730 NJ 730 3840
+preplace netloc metadata_extraction_1_ip_hdr 1 5 6 2030J 590 2420J 740 NJ 740 NJ 740 NJ 740 3830
+preplace netloc metadata_extraction_1_iv 1 5 7 1940 150 NJ 150 NJ 150 NJ 150 NJ 150 3880J 140 4360J
+preplace netloc metadata_extraction_1_key 1 5 7 2000 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 4380J
+preplace netloc metadata_extraction_1_mac_hdr 1 5 6 1970J 370 NJ 370 NJ 370 NJ 370 NJ 370 3850
+preplace netloc metadata_extraction_1_pkt_len 1 5 7 1950 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 4320J
+preplace netloc metadata_extraction_1_vlan_hdr 1 5 6 2040 580 2390J 1000 2710J 860 NJ 860 NJ 860 3810J
+preplace netloc metadata_extraction_1_vlan_present 1 5 6 1960 380 NJ 380 NJ 380 NJ 380 NJ 380 3820J
+preplace netloc packet_length_calc_0_m_axis_length 1 14 1 5790 260n
+preplace netloc packet_length_calc_0_m_axis_tdata 1 14 2 NJ 160 6310
+preplace netloc packet_length_calc_0_m_axis_tkeep 1 14 2 NJ 180 6300
+preplace netloc pkt_frwd_m_axis_tdata 1 16 1 N 550
+preplace netloc pkt_frwd_m_axis_tkeep 1 16 1 N 570
+preplace netloc pkt_frwd_m_axis_tlast 1 16 1 N 590
+preplace netloc pkt_frwd_m_axis_tvalid 1 16 1 6790 610n
+preplace netloc pkt_frwd_user_metadata_out 1 16 1 6740 530n
+preplace netloc ready_control_logic_0_tready_out 1 8 1 3100 250n
+preplace netloc reset_latch_dyn_0_rstn_100M 1 0 16 -150J 620 NJ 620 NJ 620 1010 680 1460J 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 3940J 600 NJ 600 NJ 600 NJ 600 NJ 600 6220J
+preplace netloc reset_latch_dyn_0_rstn_200M 1 0 1 -130 790n
+preplace netloc sad_valid_Res 1 9 1 N 460
+preplace netloc sdnet_0_s_axis_tready 1 9 7 3480 190 NJ 190 4320J 360 NJ 360 NJ 360 5830 240 6250
+preplace netloc sdnet_0_user_extern_out 1 14 3 5870 640 6200J 830 6740
+preplace netloc sdnet_0_user_extern_out_valid 1 14 3 5860 460 6240J 430 6750
+preplace netloc srst_1 1 0 12 -120J 640 NJ 640 NJ 640 970J 700 1430J 630 NJ 630 2440J 690 NJ 690 3120J 670 NJ 670 3910 70 NJ
+preplace netloc xlconcat_0_dout 1 15 1 6300 710n
+preplace netloc xlconcat_1_dout 1 3 1 1000 590n
+preplace netloc xlconstant_0_dout 1 14 1 NJ 1000
+preplace netloc xlconstant_ENC_SAD_0_dout 1 2 1 NJ 1080
+preplace netloc xlslice_1_Dout 1 14 1 5750J 900n
+preplace netloc xlslice_2_Dout 1 14 1 5760J 800n
+preplace netloc demux_logic_0_m1_axis 1 6 1 2410 550n
+preplace netloc s_axi_1 1 0 4 NJ 450 NJ 450 NJ 450 NJ
+preplace netloc Conn2 1 0 1 NJ 730
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 7 1 N 920
+preplace netloc axis_data_fifo_1_M_AXIS 1 8 10 3120 950 NJ 950 NJ 950 4410J 710 NJ 710 NJ 710 5810J 820 6180J 840 NJ 840 NJ
+preplace netloc axis_register_slice_0_M_AXIS 1 7 1 2710 490n
+preplace netloc axis_interconnect_1_M00_AXIS 1 1 1 N 840
+preplace netloc Conn3 1 0 1 NJ 750
+preplace netloc Silex_AES_GCM_DEC_M_AXIS 1 12 1 4960 110n
+preplace netloc data_latch_block_1_m_axis 1 17 1 NJ 600
+preplace netloc axis_dwidth_converter_1_M_AXIS 1 13 1 5310 170n
+preplace netloc demux_logic_0_m0_axis 1 6 1 2380J 830n
+preplace netloc Conn1 1 0 16 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 2010J 650 NJ 650 NJ 650 NJ 650 3500J 640 3930J 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc byte_swapping_logic_0_m_axis 1 11 1 4310 50n
+preplace netloc axis_register_slice_1_M_AXIS 1 10 1 3880 310n
+levelinfo -pg 1 -170 70 420 810 1220 1720 2210 2590 2920 3300 3660 4140 4740 5200 5568 6040 6529 6950 7130
+pagesize -pg 1 -db -bbox -sgen -360 -200 7360 2210
+"
+}
+0

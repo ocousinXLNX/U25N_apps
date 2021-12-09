@@ -1,0 +1,75 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.440552",
+   "Default View_TopLeft":"-386,-379",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port M_AXIS -pg 1 -lvl 9 -x 3050 -y 270 -defaultsOSRD
+preplace port S_AXIS1 -pg 1 -lvl 0 -x -200 -y 640 -defaultsOSRD
+preplace port maex_ovs_req_ar_0 -pg 1 -lvl 9 -x 3050 -y 430 -defaultsOSRD
+preplace port s_axilite_MAEM -pg 1 -lvl 0 -x -200 -y 130 -defaultsOSRD
+preplace port s_axilite_MAEO -pg 1 -lvl 0 -x -200 -y 700 -defaultsOSRD
+preplace port s_axilite_MAEX -pg 1 -lvl 0 -x -200 -y 560 -defaultsOSRD
+preplace port s_axilite_MAEXD -pg 1 -lvl 0 -x -200 -y 430 -defaultsOSRD
+preplace port s_axilite_MAEXE -pg 1 -lvl 0 -x -200 -y 620 -defaultsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x -200 -y 340 -defaultsOSRD
+preplace port CLK_100M_in -pg 1 -lvl 0 -x -200 -y 170 -defaultsOSRD
+preplace port cam_mem_aresetn -pg 1 -lvl 0 -x -200 -y 150 -defaultsOSRD
+preplace port clk_200M_out -pg 1 -lvl 0 -x -200 -y 190 -defaultsOSRD
+preplace port clk_400M_out -pg 1 -lvl 0 -x -200 -y 210 -defaultsOSRD
+preplace port rstn_200M -pg 1 -lvl 0 -x -200 -y 270 -defaultsOSRD
+preplace port rstn_400M -pg 1 -lvl 0 -x -200 -y 230 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x -200 -y 250 -defaultsOSRD
+preplace inst MAEM -pg 1 -lvl 3 -x 930 -y 620 -defaultsOSRD
+preplace inst MAEO -pg 1 -lvl 2 -x 480 -y 590 -defaultsOSRD
+preplace inst MAEX -pg 1 -lvl 6 -x 2080 -y 700 -defaultsOSRD
+preplace inst MAEXD -pg 1 -lvl 5 -x 1650 -y 650 -defaultsOSRD
+preplace inst MAEXE -pg 1 -lvl 7 -x 2485 -y 640 -defaultsOSRD
+preplace inst mport_to_vlan_converter -pg 1 -lvl 8 -x 2860 -y 680 -defaultsOSRD
+preplace inst vlan_to_mport_convert -pg 1 -lvl 1 -x 40 -y 560 -defaultsOSRD
+preplace inst Lookup -pg 1 -lvl 4 -x 1298 -y 690 -defaultsOSRD
+preplace netloc MAE0_m_axis_tdata 1 2 1 710J 550n
+preplace netloc MAE0_m_axis_tkeep 1 2 1 700J 570n
+preplace netloc MAE0_m_axis_tlast 1 2 1 690J 590n
+preplace netloc MAE0_m_axis_tvalid 1 2 1 680J 610n
+preplace netloc MAE0_user_metadata_out 1 2 1 670J 630n
+preplace netloc MAEXD_m_axis_tdata 1 5 1 1850 610n
+preplace netloc MAEXD_m_axis_tkeep 1 5 1 1840 630n
+preplace netloc MAEXD_m_axis_tlast 1 5 1 1830 650n
+preplace netloc MAEXD_m_axis_tuser 1 5 1 1860 610n
+preplace netloc MAEXD_m_axis_tvalid 1 5 1 1810 690n
+preplace netloc MAE_BLOCK_DESIGN_clk_400M_0 1 0 6 -140 320 180J 410 750J 410 1110 800 N 800 1870
+preplace netloc cam_mem_aresetn_1 1 0 6 -120 300 230J 400 780J 400 N 400 N 400 1870
+preplace netloc clk_100M_out_1 1 0 7 -130 310 220J 420 760 420 1130 530 1460 530 1880 530 2270
+preplace netloc clk_wiz_0_clk_250M 1 0 8 -150 430 240 430 730 430 1100 520 1470 520 1890 520 2290 520 2710
+preplace netloc dst_mport_1 1 7 1 2690 600n
+preplace netloc m_axis_tready_1 1 1 3 250 440 N 440 1080
+preplace netloc m_axis_tready_2 1 4 3 1480 510 N 510 2250
+preplace netloc mport_to_vlan_converter_s_axis_tready 1 6 3 2320J 500 N 500 3010
+preplace netloc s_axi_aresetn_1 1 0 7 -170 330 170J 350 770 350 N 350 1440 760 1890 860 2320
+preplace netloc s_axis_aresetn_0_0_2 1 0 8 -180 450 190 450 720 450 1090 790 1470 770 1820 870 2310 510 2700
+preplace netloc s_axis_tdata_1 1 7 1 2690 640n
+preplace netloc s_axis_tkeep_1 1 7 1 2680 660n
+preplace netloc s_axis_tlast_1 1 7 1 2660 680n
+preplace netloc s_axis_tvalid_1 1 7 1 2650 700n
+preplace netloc src_mport_1 1 7 1 2670 620n
+preplace netloc Conn2 1 8 1 3020 270n
+preplace netloc axi_interconnect_0_M09_AXI 1 0 6 -160J 380 NJ 380 NJ 380 NJ 380 N 380 1900
+preplace netloc axi_interconnect_0_M10_AXI 1 0 7 -140J 390 NJ 390 NJ 390 NJ 390 N 390 NJ 390 2300
+preplace netloc MAEXE_M_AXIS 1 0 8 -120 360 N 360 N 360 N 360 N 360 N 360 N 360 2690
+preplace netloc MAEX_m_axis 1 6 1 2280 600n
+preplace netloc axi_interconnect_0_M07_AXI 1 0 3 NJ 130 N 130 740
+preplace netloc axi_interconnect_0_M06_AXI 1 0 2 -130J 470 200J
+preplace netloc vlan_to_mport_convert_M00_AXIS 1 1 1 210 510n
+preplace netloc Conn3 1 0 1 -120J 550n
+preplace netloc axi_interconnect_0_M08_AXI 1 0 5 -170J 370 NJ 370 NJ 370 N 370 1450
+preplace netloc Conn5 1 6 3 2260J 490 NJ 490 3030
+preplace netloc MAEM_M_AXIS 1 3 1 1120 610n
+preplace netloc S_AXIS_1 1 4 1 1430 590n
+preplace netloc Conn1 1 0 4 NJ 340 NJ 340 NJ 340 1140J
+levelinfo -pg 1 -200 40 480 930 1298 1650 2080 2485 2860 3050
+pagesize -pg 1 -db -bbox -sgen -390 -160 3240 1510
+"
+}
+0

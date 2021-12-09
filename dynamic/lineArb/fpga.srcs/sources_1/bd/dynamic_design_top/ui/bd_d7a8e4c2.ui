@@ -1,0 +1,92 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.58111",
+   "Default View_TopLeft":"1942,405",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port M_AXIS -pg 1 -lvl 7 -x 2560 -y 600 -defaultsOSRD
+preplace port S_AXIS -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace port ap_rst -pg 1 -lvl 0 -x 0 -y 1130 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port iv_aad_key_len_wr_en -pg 1 -lvl 0 -x 0 -y 1310 -defaultsOSRD
+preplace port s_axis_aresetn -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace port tag_from_pkt_rden_o -pg 1 -lvl 7 -x 2560 -y 740 -defaultsOSRD
+preplace portBus cypher_txt_len -pg 1 -lvl 0 -x 0 -y 830 -defaultsOSRD
+preplace portBus iv -pg 1 -lvl 0 -x 0 -y 1290 -defaultsOSRD
+preplace portBus iv_full_not -pg 1 -lvl 7 -x 2560 -y 1330 -defaultsOSRD
+preplace portBus key -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace portBus len_full_not -pg 1 -lvl 7 -x 2560 -y 830 -defaultsOSRD
+preplace portBus spi_seq_nmbr_aad -pg 1 -lvl 0 -x 0 -y 1050 -defaultsOSRD
+preplace portBus tag_sad_o -pg 1 -lvl 0 -x 0 -y 780 -defaultsOSRD
+preplace inst axis_data_fifo_plain_txt_dec_in -pg 1 -lvl 1 -x 150 -y 310 -defaultsOSRD
+preplace inst constant_1 -pg 1 -lvl 2 -x 540 -y 180 -defaultsOSRD
+preplace inst fifo_aftr_pkt_frmtn -pg 1 -lvl 6 -x 2390 -y 610 -defaultsOSRD
+preplace inst fifo_generator_dec_key -pg 1 -lvl 5 -x 2050 -y 130 -defaultsOSRD
+preplace inst fifo_generator_iv -pg 1 -lvl 5 -x 2050 -y 1350 -defaultsOSRD
+preplace inst fifo_generator_plain_txt_len_dec_out -pg 1 -lvl 5 -x 2050 -y 850 -defaultsOSRD
+preplace inst fifo_generator_spi_seq_aad -pg 1 -lvl 5 -x 2050 -y 1100 -defaultsOSRD
+preplace inst gmode_2_0 -pg 1 -lvl 3 -x 1070 -y 340 -defaultsOSRD
+preplace inst iv_full_not -pg 1 -lvl 6 -x 2390 -y 1330 -defaultsOSRD
+preplace inst len_full_not -pg 1 -lvl 6 -x 2390 -y 830 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 1070 -y 720 -defaultsOSRD
+preplace inst input_data_packer_ae_0 -pg 1 -lvl 2 -x 540 -y 420 -defaultsOSRD
+preplace inst pkt_formation_logic_1 -pg 1 -lvl 4 -x 1590 -y 630 -defaultsOSRD
+preplace netloc Net 1 0 6 20 390 280 600 760 650 1330 880 1860 680 NJ
+preplace netloc Net3 1 0 5 NJ 1130 NJ 1130 NJ 1130 NJ 1130 1810
+preplace netloc din1_1 1 0 5 NJ 1050 NJ 1050 NJ 1050 NJ 1050 NJ
+preplace netloc esp_trailer_addition_0_length_bytes_o 1 0 5 NJ 830 NJ 830 NJ 830 NJ 830 1870J
+preplace netloc fifo_aftr_pkt_frmtn_s_axis_tready 1 4 2 NJ 640 2240
+preplace netloc fifo_generator_dec_key_dout 1 1 4 350 80 NJ 80 NJ 80 1860J
+preplace netloc fifo_generator_dec_key_empty 1 1 4 320 610 NJ 610 1290J 470 1790
+preplace netloc fifo_generator_iv_dout 1 1 4 290 1370 NJ 1370 NJ 1370 NJ
+preplace netloc fifo_generator_iv_empty 1 1 4 300 1350 NJ 1350 NJ 1350 NJ
+preplace netloc fifo_generator_iv_prog_full 1 5 1 NJ 1330
+preplace netloc fifo_generator_plain_txt_len_dec_out_dout 1 3 2 1380 870 NJ
+preplace netloc fifo_generator_plain_txt_len_dec_out_empty 1 3 2 1370 850 NJ
+preplace netloc fifo_generator_plain_txt_len_dec_out_prog_full 1 5 1 NJ 830
+preplace netloc fifo_generator_spi_seq_aad_dout 1 1 4 310 1110 NJ 1110 NJ 1110 NJ
+preplace netloc gmode_2_0_R_Data 1 3 1 1320 320n
+preplace netloc gmode_2_0_R_Data_Tag 1 3 1 1300 400n
+preplace netloc gmode_2_0_R_Empty_Tag 1 3 1 1310 420n
+preplace netloc gmode_2_0_W_Full 1 1 3 330 620 NJ 620 1270
+preplace netloc gmode_2_0_W_Full_IV 1 1 3 340 630 NJ 630 1260
+preplace netloc gmode_2_0_W_Ready_Key 1 1 3 350 640 NJ 640 1250
+preplace netloc input_data_packer_ae_0_W_Context 1 2 1 780 360n
+preplace netloc input_data_packer_ae_0_W_Data 1 2 1 790 380n
+preplace netloc input_data_packer_ae_0_W_Data_IV 1 2 1 840 420n
+preplace netloc input_data_packer_ae_0_W_Data_Key 1 2 1 870 480n
+preplace netloc input_data_packer_ae_0_W_En 1 2 1 730 280n
+preplace netloc input_data_packer_ae_0_W_En_IV 1 2 1 830 400n
+preplace netloc input_data_packer_ae_0_W_En_Key 1 2 1 850 440n
+preplace netloc input_data_packer_ae_0_W_Index 1 2 1 750 260n
+preplace netloc input_data_packer_ae_0_W_Index_Key 1 2 1 860 460n
+preplace netloc input_data_packer_ae_0_W_Keysize 1 2 1 770 320n
+preplace netloc input_data_packer_ae_0_iv_fifo_rd_en 1 2 3 740 1120 NJ 1120 1820
+preplace netloc input_data_packer_ae_0_key_fifo_rd_en 1 2 3 800J 600 1280J 460 1820
+preplace netloc iv_full_not_Res 1 6 1 NJ 1330
+preplace netloc iv_seq_nmbr_cache_0_iv 1 0 5 NJ 1290 NJ 1290 NJ 1290 NJ 1290 NJ
+preplace netloc len_full_not_Res 1 6 1 NJ 830
+preplace netloc metadata_extraction_0_key 1 0 5 NJ 70 NJ 70 NJ 70 NJ 70 NJ
+preplace netloc metadata_extraction_0_valid_out 1 0 5 NJ 1310 NJ 1310 NJ 1310 NJ 1310 1830
+preplace netloc pkt_formation_logic_1_len_fifo_rden_o 1 4 1 1840 660n
+preplace netloc pkt_formation_logic_1_m_axis_tdata 1 4 2 NJ 560 N
+preplace netloc pkt_formation_logic_1_m_axis_tkeep 1 4 2 NJ 580 N
+preplace netloc pkt_formation_logic_1_m_axis_tlast 1 4 2 NJ 600 N
+preplace netloc pkt_formation_logic_1_m_axis_tvalid 1 4 2 NJ 620 2230
+preplace netloc pkt_formation_logic_1_plaintext_fifo_rden_o 1 2 3 880 800 NJ 800 1790
+preplace netloc pkt_formation_logic_1_tag_fifo_rden_o 1 2 3 890 790 NJ 790 1820
+preplace netloc pkt_formation_logic_1_tag_from_pkt_rden_o 1 4 3 NJ 700 2240J 740 NJ
+preplace netloc s_axis_aresetn_1 1 0 6 30 400 270 240 820 660 1350 810 1800J 670 2240J
+preplace netloc stream_fifo_full_i_1 1 3 4 1390 820 1850J 710 2230J 750 2540
+preplace netloc tag_sad_o_1 1 0 4 NJ 780 NJ 780 NJ 780 1360J
+preplace netloc xlconstant_0_dout 1 2 1 810J 180n
+preplace netloc xlconstant_0_dout1 1 3 1 1340J 590n
+preplace netloc axis_data_fifo_plain_txt_dec_in_M_AXIS 1 1 1 N 310
+preplace netloc Conn1 1 0 1 NJ 290
+preplace netloc Conn5 1 6 1 NJ 600
+levelinfo -pg 1 0 150 540 1070 1590 2050 2390 2560
+pagesize -pg 1 -db -bbox -sgen -230 -10 2760 1490
+"
+}
+0

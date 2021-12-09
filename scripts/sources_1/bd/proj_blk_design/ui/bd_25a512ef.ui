@@ -1,0 +1,48 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.845869",
+   "Default View_TopLeft":"116,-371",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXIS_00 -pg 1 -lvl 0 -x -140 -y 70 -defaultsOSRD
+preplace port m1_axis -pg 1 -lvl 6 -x 1680 -y 540 -defaultsOSRD
+preplace port m0_axis -pg 1 -lvl 6 -x 1680 -y 520 -defaultsOSRD
+preplace port usr_clk -pg 1 -lvl 0 -x -140 -y 420 -defaultsOSRD
+preplace port usr_resetn -pg 1 -lvl 0 -x -140 -y 440 -defaultsOSRD
+preplace port o_ctl_tx_resend_pause_0 -pg 1 -lvl 6 -x 1680 -y -160 -defaultsOSRD
+preplace port s_axis_aresetn_0 -pg 1 -lvl 0 -x -140 -y 110 -defaultsOSRD
+preplace port s_axis_aclk_0 -pg 1 -lvl 0 -x -140 -y 90 -defaultsOSRD
+preplace portBus i_stat_tx_pause_valid_0 -pg 1 -lvl 0 -x -140 -y 400 -defaultsOSRD
+preplace portBus o_ctl_tx_pause_req_0 -pg 1 -lvl 6 -x 1680 -y -180 -defaultsOSRD
+preplace portBus port0_mode -pg 1 -lvl 0 -x -140 -y 600 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 2 -x 350 -y 110 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 3 -x 680 -y 340 -defaultsOSRD
+preplace inst axis_interconnect_0 -pg 1 -lvl 3 -x 680 -y 150 -defaultsOSRD
+preplace inst mac_traffic_control_0 -pg 1 -lvl 1 -x 70 -y 100 -defaultsOSRD
+preplace inst MAC_RX_out_logic_0 -pg 1 -lvl 4 -x 1080 -y 120 -defaultsOSRD
+preplace inst mac_flow_control_0 -pg 1 -lvl 4 -x 1080 -y -180 -defaultsOSRD
+preplace inst mode_selection_MAC0 -pg 1 -lvl 5 -x 1490 -y 80 -defaultsOSRD
+preplace netloc util_vector_logic_1_Res 1 3 1 860J -160n
+preplace netloc axis_data_fifo_1_prog_full 1 0 3 -70 -10 NJ -10 480
+preplace netloc axis_data_fifo_1_prog_empty 1 2 1 490 110n
+preplace netloc Net1 1 0 5 -110J -20 NJ -20 510 20 850 20 1330
+preplace netloc Net 1 0 5 NJ 440 NJ 440 530 30 840J 30 1300
+preplace netloc i_stat_tx_pause_valid_0_1 1 0 4 -120J -140 NJ -140 NJ -140 NJ
+preplace netloc mac_flow_control_0_o_ctl_tx_pause_req 1 4 2 NJ -180 N
+preplace netloc mac_flow_control_0_o_ctl_tx_resend_pause 1 4 2 NJ -160 N
+preplace netloc s_axis_aresetn_0_1 1 0 4 -100 190 220 190 500 -180 NJ
+preplace netloc s_axis_aclk_0_1 1 0 4 -80 10 210 30 520 -190 860
+preplace netloc port0_mode_1 1 0 5 -90J 0 NJ 0 NJ 0 NJ 0 1310
+preplace netloc mac_traffic_control_0_m0_axis 1 1 1 N 90
+preplace netloc axis_data_fifo_1_M_AXIS 1 2 1 N 90
+preplace netloc S_AXIS_00_1 1 0 1 NJ 70
+preplace netloc Conn1 1 5 1 1650 90n
+preplace netloc MAC_RX_out_logic_0_m_axis 1 4 1 1320 50n
+preplace netloc Conn2 1 5 1 1660 70n
+preplace netloc axis_interconnect_0_M00_AXIS 1 3 1 830 90n
+levelinfo -pg 1 -140 70 350 680 1080 1490 1680
+pagesize -pg 1 -db -bbox -sgen -400 -280 1920 680
+"
+}
+

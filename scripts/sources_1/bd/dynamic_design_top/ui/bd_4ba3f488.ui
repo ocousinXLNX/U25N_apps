@@ -1,0 +1,134 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.504425",
+   "Default View_TopLeft":"1651,393",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port M_AXIS -pg 1 -lvl 10 -x 3460 -y 1440 -defaultsOSRD
+preplace port s_axis -pg 1 -lvl 0 -x -10 -y 170 -defaultsOSRD
+preplace port s_axis_aclk -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD
+preplace port s_axis_aresetn -pg 1 -lvl 0 -x -10 -y 210 -defaultsOSRD
+preplace port qos_enable -pg 1 -lvl 0 -x -10 -y 230 -defaultsOSRD
+preplace portBus count_in -pg 1 -lvl 0 -x -10 -y 1360 -defaultsOSRD
+preplace portBus interface_burst_value -pg 1 -lvl 0 -x -10 -y 1480 -defaultsOSRD
+preplace portBus interface_token_value -pg 1 -lvl 0 -x -10 -y 1460 -defaultsOSRD
+preplace portBus q0_CIR_burst_value -pg 1 -lvl 0 -x -10 -y 1210 -defaultsOSRD
+preplace portBus q0_CIR_token_value -pg 1 -lvl 0 -x -10 -y 1190 -defaultsOSRD
+preplace portBus q0_PIR_burst_value -pg 1 -lvl 0 -x -10 -y 1250 -defaultsOSRD
+preplace portBus q0_PIR_token_value -pg 1 -lvl 0 -x -10 -y 1230 -defaultsOSRD
+preplace portBus q1_CIR_burst_value -pg 1 -lvl 0 -x -10 -y 1290 -defaultsOSRD
+preplace portBus q1_CIR_token_value -pg 1 -lvl 0 -x -10 -y 1270 -defaultsOSRD
+preplace portBus q1_PIR_burst_value -pg 1 -lvl 0 -x -10 -y 1380 -defaultsOSRD
+preplace portBus q1_PIR_token_value -pg 1 -lvl 0 -x -10 -y 1400 -defaultsOSRD
+preplace portBus q2_CIR_burst_value -pg 1 -lvl 0 -x -10 -y 1420 -defaultsOSRD
+preplace portBus q2_CIR_token_value -pg 1 -lvl 0 -x -10 -y 1440 -defaultsOSRD
+preplace portBus q2_PIR_burst_value -pg 1 -lvl 0 -x -10 -y 1500 -defaultsOSRD
+preplace portBus q2_PIR_token_value -pg 1 -lvl 0 -x -10 -y 1520 -defaultsOSRD
+preplace portBus q3_CIR_burst_value -pg 1 -lvl 0 -x -10 -y 1540 -defaultsOSRD
+preplace portBus q3_CIR_token_value -pg 1 -lvl 0 -x -10 -y 1560 -defaultsOSRD
+preplace portBus q3_PIR_burst_value -pg 1 -lvl 0 -x -10 -y 1580 -defaultsOSRD
+preplace portBus q3_PIR_token_value -pg 1 -lvl 0 -x -10 -y 1600 -defaultsOSRD
+preplace portBus quanta_for_CLASS0 -pg 1 -lvl 0 -x -10 -y 1110 -defaultsOSRD
+preplace portBus quanta_for_CLASS1 -pg 1 -lvl 0 -x -10 -y 1130 -defaultsOSRD
+preplace portBus quanta_for_CLASS2 -pg 1 -lvl 0 -x -10 -y 1150 -defaultsOSRD
+preplace portBus quanta_for_CLASS3 -pg 1 -lvl 0 -x -10 -y 1170 -defaultsOSRD
+preplace inst CIR_PATH_mux_interconnect -pg 1 -lvl 8 -x 2950 -y 1240 -defaultsOSRD
+preplace inst DROP_FIFO_0_1 -pg 1 -lvl 6 -x 1880 -y 430 -defaultsOSRD
+preplace inst DROP_FIFO_2 -pg 1 -lvl 6 -x 1880 -y 990 -defaultsOSRD
+preplace inst DROP_FIFO_3_4 -pg 1 -lvl 6 -x 1880 -y 710 -defaultsOSRD
+preplace inst DROP_FIFO_5_7 -pg 1 -lvl 6 -x 1880 -y 130 -defaultsOSRD
+preplace inst QOS_extraction_rtl_0 -pg 1 -lvl 2 -x 300 -y 200 -defaultsOSRD
+preplace inst axis_interconnect_1 -pg 1 -lvl 9 -x 3280 -y 1440 -defaultsOSRD
+preplace inst qos_demux_RTL_0 -pg 1 -lvl 5 -x 1450 -y 440 -defaultsOSRD
+preplace inst qos_selective_drop_R_0 -pg 1 -lvl 4 -x 1090 -y 250 -defaultsOSRD
+preplace inst timer_block_0 -pg 1 -lvl 6 -x 1880 -y 1340 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -x 690 -y 460 -defaultsOSRD
+preplace inst packet_length_calcul_4 -pg 1 -lvl 3 -x 690 -y 220 -defaultsOSRD
+preplace inst token_management_log_0 -pg 1 -lvl 7 -x 2570 -y 1070 -defaultsOSRD
+preplace netloc DROP_FIFO_0_1_axis_prog_full 1 2 5 490 80 NJ 80 NJ 80 1650J 280 2090
+preplace netloc DROP_FIFO_0_1_m_axis_tdata 1 6 1 2290 370n
+preplace netloc DROP_FIFO_0_1_m_axis_tdest 1 6 1 2280 390n
+preplace netloc DROP_FIFO_0_1_m_axis_tkeep 1 6 1 2260 410n
+preplace netloc DROP_FIFO_0_1_m_axis_tlast 1 6 1 2220 430n
+preplace netloc DROP_FIFO_0_1_m_axis_tuser 1 6 1 2150 470n
+preplace netloc DROP_FIFO_0_1_m_axis_tvalid 1 6 1 2180 490n
+preplace netloc DROP_FIFO_2_axis_prog_full 1 2 5 510 570 NJ 570 NJ 570 NJ 570 2090
+preplace netloc DROP_FIFO_2_m_axis_tdata 1 6 1 2110 830n
+preplace netloc DROP_FIFO_2_m_axis_tdest 1 6 1 2100 810n
+preplace netloc DROP_FIFO_2_m_axis_tkeep 1 6 1 2130 850n
+preplace netloc DROP_FIFO_2_m_axis_tlast 1 6 1 2140 870n
+preplace netloc DROP_FIFO_2_m_axis_tuser 1 6 1 2100 1030n
+preplace netloc DROP_FIFO_2_m_axis_tvalid 1 6 1 2160 890n
+preplace netloc DROP_FIFO_3_4_axis_prog_full 1 2 5 500 850 NJ 850 NJ 850 NJ 850 2080
+preplace netloc DROP_FIFO_3_4_m_axis_tdata 1 6 1 2270 650n
+preplace netloc DROP_FIFO_3_4_m_axis_tdest 1 6 1 N 670
+preplace netloc DROP_FIFO_3_4_m_axis_tkeep 1 6 1 2250 690n
+preplace netloc DROP_FIFO_3_4_m_axis_tlast 1 6 1 2210 710n
+preplace netloc DROP_FIFO_3_4_m_axis_tuser 1 6 1 2120 750n
+preplace netloc DROP_FIFO_3_4_m_axis_tvalid 1 6 1 2130 750n
+preplace netloc DROP_FIFO_5_7_axis_prog_full 1 2 5 510 370 870J 410 1290J 270 NJ 270 2150
+preplace netloc DROP_FIFO_5_7_m_axis_tdata 1 6 1 2360 70n
+preplace netloc DROP_FIFO_5_7_m_axis_tdest 1 6 1 2350 90n
+preplace netloc DROP_FIFO_5_7_m_axis_tkeep 1 6 1 2340 110n
+preplace netloc DROP_FIFO_5_7_m_axis_tlast 1 6 1 2330 130n
+preplace netloc DROP_FIFO_5_7_m_axis_tuser 1 6 1 2230 170n
+preplace netloc DROP_FIFO_5_7_m_axis_tvalid 1 6 1 2300 190n
+preplace netloc clk_wiz_0_clk_out2 1 0 9 NJ 190 70 110 470 360 880J 420 1310 310 1640 1180 2290 1690 2780 1490 3110
+preplace netloc clk_wiz_0_locked1 1 0 9 NJ 210 70 290 480 350 870 90 1280 150 1620 1160 2300 1700 2790 1500 3120
+preplace netloc count_in_1 1 0 6 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ
+preplace netloc interface_burst_value_1 1 0 7 NJ 1480 NJ 1480 NJ 1480 NJ 1480 NJ 1480 1600J 1530 NJ
+preplace netloc interface_token_value_1 1 0 7 NJ 1460 NJ 1460 NJ 1460 NJ 1460 NJ 1460 1630J 1510 NJ
+preplace netloc packet_length_calcul_4_m_axis_length 1 3 1 900 250n
+preplace netloc packet_length_calcul_4_m_axis_tdata 1 3 1 N 190
+preplace netloc packet_length_calcul_4_m_axis_tdest 1 3 1 N 170
+preplace netloc packet_length_calcul_4_m_axis_tkeep 1 3 1 N 210
+preplace netloc packet_length_calcul_4_m_axis_tlast 1 3 1 N 230
+preplace netloc packet_length_calcul_4_m_axis_tvalid 1 3 1 890 250n
+preplace netloc q0_CIR_burst_value_1 1 0 7 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ
+preplace netloc q0_CIR_token_value_1 1 0 7 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ
+preplace netloc q0_PIR_burst_value_1 1 0 7 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ
+preplace netloc q0_PIR_token_value_1 1 0 7 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ
+preplace netloc q1_CIR_burst_value_1 1 0 7 NJ 1290 NJ 1290 NJ 1290 NJ 1290 NJ 1290 1610J 1450 2260J
+preplace netloc q1_CIR_token_value_1 1 0 7 10J 1260 NJ 1260 NJ 1260 NJ 1260 NJ 1260 NJ 1260 2130J
+preplace netloc q1_PIR_burst_value_1 1 0 7 NJ 1380 NJ 1380 NJ 1380 NJ 1380 NJ 1380 1630J 1420 2250J
+preplace netloc q1_PIR_token_value_1 1 0 7 NJ 1400 NJ 1400 NJ 1400 NJ 1400 NJ 1400 1600J 1430 2240J
+preplace netloc q2_CIR_burst_value_1 1 0 7 NJ 1420 NJ 1420 NJ 1420 NJ 1420 NJ 1420 1590J 1440 2270J
+preplace netloc q2_CIR_token_value_1 1 0 7 10J 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 2280J
+preplace netloc q2_PIR_burst_value_1 1 0 7 NJ 1500 NJ 1500 NJ 1500 NJ 1500 NJ 1500 NJ 1500 2320J
+preplace netloc q2_PIR_token_value_1 1 0 7 NJ 1520 NJ 1520 NJ 1520 NJ 1520 NJ 1520 NJ 1520 2310J
+preplace netloc q3_CIR_burst_value_1 1 0 7 NJ 1540 NJ 1540 NJ 1540 NJ 1540 NJ 1540 NJ 1540 2340J
+preplace netloc q3_CIR_token_value_1 1 0 7 NJ 1560 NJ 1560 NJ 1560 NJ 1560 NJ 1560 NJ 1560 2330J
+preplace netloc q3_PIR_burst_value_1 1 0 7 NJ 1580 NJ 1580 NJ 1580 NJ 1580 NJ 1580 NJ 1580 2360J
+preplace netloc q3_PIR_token_value_1 1 0 7 NJ 1600 NJ 1600 NJ 1600 NJ 1600 NJ 1600 NJ 1600 2350J
+preplace netloc qos_selective_drop_R_0_s_00_axis_TReady 1 3 1 880 270n
+preplace netloc quanta_for_CLASS0_1 1 0 7 NJ 1110 NJ 1110 NJ 1110 NJ 1110 NJ 1110 1610J 1130 2180J
+preplace netloc quanta_for_CLASS1_1 1 0 7 NJ 1130 NJ 1130 NJ 1130 NJ 1130 NJ 1130 1590J 1140 2200J
+preplace netloc quanta_for_CLASS2_1 1 0 7 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ
+preplace netloc quanta_for_CLASS3_1 1 0 7 NJ 1170 NJ 1170 NJ 1170 NJ 1170 NJ 1170 NJ 1170 NJ
+preplace netloc timer_block_0_htb_tick 1 6 1 2110 1340n
+preplace netloc token_management_log_0_q0_pkt_tready 1 6 1 2320 150n
+preplace netloc token_management_log_0_q1_pkt_tready 1 6 1 2190 730n
+preplace netloc token_management_log_0_q2_pkt_tready 1 6 1 2170 910n
+preplace netloc token_management_log_0_q3_pkt_tready 1 6 1 2200 450n
+preplace netloc xlconcat_0_dout 1 3 1 900 350n
+preplace netloc qos_enable_1 1 0 2 NJ 230 NJ
+preplace netloc from_MAC00_is_MAC0_m_axis 1 0 2 NJ 170 NJ
+preplace netloc token_management_log_0_q3_CIR_path 1 7 1 N 1110
+preplace netloc token_management_log_0_q2_CIR_path 1 7 1 N 1090
+preplace netloc axis_interconnect_1_M00_AXIS 1 9 1 N 1440
+preplace netloc token_management_log_0_q0_CIR_path 1 7 1 N 1050
+preplace netloc qos_demux_RTL_0_m1_axis 1 5 1 1630 430n
+preplace netloc QOS_extraction_rtl_0_m_axis 1 2 1 N 190
+preplace netloc qos_demux_RTL_0_m2_axis 1 5 1 1590 450n
+preplace netloc token_management_log_0_m_axis_PIR_path 1 7 2 2780J 990 3120
+preplace netloc qos_selective_drop_R_0_m_00_axis 1 4 1 1300 240n
+preplace netloc token_management_log_0_q1_CIR_path 1 7 1 N 1070
+preplace netloc S01_AXIS_1 1 8 1 3110 1240n
+preplace netloc qos_demux_RTL_0_m3_axis 1 5 1 1610 410n
+preplace netloc qos_demux_RTL_0_m0_axis 1 5 1 1590 110n
+levelinfo -pg 1 -10 50 300 690 1090 1450 1880 2570 2950 3280 3460
+pagesize -pg 1 -db -bbox -sgen -270 -10 3570 1730
+"
+}
+0

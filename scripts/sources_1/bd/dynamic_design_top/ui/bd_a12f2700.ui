@@ -1,0 +1,67 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.5",
+   "Default View_TopLeft":"824,6",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXIS -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x 0 -y 690 -defaultsOSRD
+preplace port CLK_100M_in -pg 1 -lvl 0 -x 0 -y 750 -defaultsOSRD
+preplace port cam_mem_aresetn -pg 1 -lvl 0 -x 0 -y 810 -defaultsOSRD
+preplace port clk_200M_out -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port clk_400M_out -pg 1 -lvl 0 -x 0 -y 790 -defaultsOSRD
+preplace port m_axis_tlast -pg 1 -lvl 5 -x 1690 -y 690 -defaultsOSRD
+preplace port m_axis_tready -pg 1 -lvl 0 -x 0 -y 910 -defaultsOSRD
+preplace port m_axis_tvalid -pg 1 -lvl 5 -x 1690 -y 730 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 770 -defaultsOSRD
+preplace port s_axis_aresetn_0 -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace portBus m_axis_tdata -pg 1 -lvl 5 -x 1690 -y 650 -defaultsOSRD
+preplace portBus m_axis_tkeep -pg 1 -lvl 5 -x 1690 -y 670 -defaultsOSRD
+preplace portBus user_metadata_out -pg 1 -lvl 5 -x 1690 -y 750 -defaultsOSRD
+preplace inst MAEO_P4 -pg 1 -lvl 4 -x 1460 -y 710 -defaultsOSRD
+preplace inst MAE_packet_length_ca_0 -pg 1 -lvl 2 -x 640 -y 150 -defaultsOSRD
+preplace inst MD_in_Valid_gen_0 -pg 1 -lvl 3 -x 1080 -y 530 -defaultsOSRD
+preplace inst const_88b -pg 1 -lvl 2 -x 640 -y 350 -defaultsOSRD
+preplace inst data_latch_to_MAEO -pg 1 -lvl 1 -x 210 -y 120 -defaultsOSRD
+preplace inst ext_meta_np_type -pg 1 -lvl 2 -x 640 -y 450 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 3 -x 1080 -y 230 -defaultsOSRD
+preplace netloc CLK_100M_in_1 1 0 4 NJ 750 NJ 750 NJ 750 NJ
+preplace netloc MAE0_m_axis_tdata 1 4 1 NJ 650
+preplace netloc MAE0_m_axis_tkeep 1 4 1 NJ 670
+preplace netloc MAE0_m_axis_tlast 1 4 1 NJ 690
+preplace netloc MAE0_m_axis_tvalid 1 4 1 NJ 730
+preplace netloc MAE0_user_metadata_out 1 4 1 NJ 750
+preplace netloc MAEO_P4_s_axis_tready 1 2 2 850 650 N
+preplace netloc MAE_BLOCK_DESIGN_clk_400M_0 1 0 4 NJ 790 NJ 790 NJ 790 NJ
+preplace netloc MAE_packet_length_ca_0_dst_mport 1 2 1 880 210n
+preplace netloc MAE_packet_length_ca_0_is_from_nw_0 1 2 1 930 90n
+preplace netloc MAE_packet_length_ca_0_is_from_nw_1 1 2 1 870 130n
+preplace netloc MAE_packet_length_ca_0_m_axis_tdata 1 2 2 940J 30 1250
+preplace netloc MAE_packet_length_ca_0_m_axis_tkeep 1 2 2 900J 640 1250
+preplace netloc MAE_packet_length_ca_0_m_axis_tlast 1 2 2 890 630 N
+preplace netloc MAE_packet_length_ca_0_m_axis_tvalid 1 2 2 860 670 N
+preplace netloc MAE_packet_length_ca_0_packet_length_o 1 2 1 N 170
+preplace netloc MAE_packet_length_ca_0_s_axis_tready 1 1 1 N 180
+preplace netloc MAE_packet_length_ca_0_src_mport 1 2 1 910 190n
+preplace netloc MD_in_Valid_gen_0_metadata_valid 1 3 1 1220 530n
+preplace netloc cam_mem_aresetn_1 1 0 4 NJ 810 NJ 810 NJ 810 NJ
+preplace netloc clk_wiz_0_clk_250M 1 0 4 20 0 410 510 920 680 1230J
+preplace netloc const_88b_dout 1 2 1 940 110n
+preplace netloc data_latch_to_MAEO_m_axis_tdata 1 1 1 420 80n
+preplace netloc data_latch_to_MAEO_m_axis_tkeep 1 1 1 400 100n
+preplace netloc data_latch_to_MAEO_m_axis_tlast 1 1 1 390 120n
+preplace netloc data_latch_to_MAEO_m_axis_tuser 1 1 1 430 80n
+preplace netloc data_latch_to_MAEO_m_axis_tvalid 1 1 1 N 160
+preplace netloc ext_meta_np_type_dout 1 2 1 920J 190n
+preplace netloc m_axis_tready_1 1 0 5 NJ 910 NJ 910 NJ 910 NJ 910 1670
+preplace netloc s_axi_aresetn_1 1 0 4 NJ 770 NJ 770 NJ 770 NJ
+preplace netloc s_axis_aresetn_0_0_2 1 0 4 20 240 430 520 940 730 NJ
+preplace netloc xlconcat_1_dout 1 3 1 1240 230n
+preplace netloc S_AXIS_1 1 0 1 NJ 90
+preplace netloc axi_interconnect_0_M06_AXI 1 0 4 NJ 690 NJ 690 NJ 690 NJ
+levelinfo -pg 1 0 210 640 1080 1460 1690
+pagesize -pg 1 -db -bbox -sgen -190 -10 1930 930
+"
+}
+0

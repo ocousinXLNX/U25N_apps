@@ -1,0 +1,171 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.191918",
+   "Default View_TopLeft":"-1381,-1673",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/from_MAC00_is_MAC0|/from_MAC10_is_MAC1|/from_MAC01_is_MAC2|/from_MAC11_is_MAC3|/to_MAC00_is_MAC0|/to_MAC01_is_MAC2|/to_MAC11_is_MAC3|/to_MAC10_is_MAC1|/MCDI|/axis_interconnect_0|",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port rx_AXIS_00 -pg 1 -lvl 0 -x -1120 -y -350 -defaultsOSRD
+preplace port rx_AXIS_01 -pg 1 -lvl 0 -x -1120 -y -120 -defaultsOSRD
+preplace port rx_AXIS_10 -pg 1 -lvl 0 -x -1120 -y -140 -defaultsOSRD
+preplace port rx_AXIS_11 -pg 1 -lvl 0 -x -1120 -y -100 -defaultsOSRD
+preplace port tx_AXIS_00 -pg 1 -lvl 13 -x 4610 -y 380 -defaultsOSRD
+preplace port tx_AXIS_01 -pg 1 -lvl 13 -x 4610 -y -520 -defaultsOSRD
+preplace port tx_AXIS_10 -pg 1 -lvl 13 -x 4610 -y 500 -defaultsOSRD
+preplace port tx_AXIS_11 -pg 1 -lvl 13 -x 4610 -y 480 -defaultsOSRD
+preplace port S_AXIS_MAC0 -pg 1 -lvl 13 -x 4610 -y -10 -defaultsOSRD
+preplace port S_AXIS_MAC1 -pg 1 -lvl 13 -x 4610 -y 10 -defaultsOSRD
+preplace port S_AXIS_MAC2_MAC3 -pg 1 -lvl 13 -x 4610 -y 30 -defaultsOSRD
+preplace port S_AXIS_Lite -pg 1 -lvl 13 -x 4610 -y 460 -defaultsOSRD
+preplace port M00_AXIS -pg 1 -lvl 0 -x -1120 -y 450 -defaultsOSRD
+preplace port M01_AXIS -pg 1 -lvl 0 -x -1120 -y 470 -defaultsOSRD
+preplace port M02_AXIS -pg 1 -lvl 0 -x -1120 -y 680 -defaultsOSRD
+preplace port M03_AXIS -pg 1 -lvl 0 -x -1120 -y 700 -defaultsOSRD
+preplace port M_AXIS_packetizer -pg 1 -lvl 0 -x -1120 -y 720 -defaultsOSRD
+preplace port clk_100M_in -pg 1 -lvl 0 -x -1120 -y 40 -defaultsOSRD
+preplace port clk_200M_out -pg 1 -lvl 13 -x 4610 -y 320 -defaultsOSRD
+preplace port clk_400M_out -pg 1 -lvl 13 -x 4610 -y 340 -defaultsOSRD
+preplace port resetn -pg 1 -lvl 13 -x 4610 -y 360 -defaultsOSRD
+preplace port rx_aclk_00 -pg 1 -lvl 0 -x -1120 -y -40 -defaultsOSRD
+preplace port rx_aclk_01 -pg 1 -lvl 0 -x -1120 -y -60 -defaultsOSRD
+preplace port rx_aclk_10 -pg 1 -lvl 0 -x -1120 -y 200 -defaultsOSRD
+preplace port rx_aclk_11 -pg 1 -lvl 0 -x -1120 -y 240 -defaultsOSRD
+preplace port s_axis_aresetn_0 -pg 1 -lvl 0 -x -1120 -y 300 -defaultsOSRD
+preplace port tx_aclk_00 -pg 1 -lvl 0 -x -1120 -y 140 -defaultsOSRD
+preplace port tx_aclk_01 -pg 1 -lvl 0 -x -1120 -y 120 -defaultsOSRD
+preplace port tx_aclk_10 -pg 1 -lvl 0 -x -1120 -y 0 -defaultsOSRD
+preplace port tx_aclk_11 -pg 1 -lvl 0 -x -1120 -y 260 -defaultsOSRD
+preplace port tx_resend_pause_00_o -pg 1 -lvl 13 -x 4610 -y 300 -defaultsOSRD
+preplace port tx_resend_pause_01_o -pg 1 -lvl 13 -x 4610 -y 220 -defaultsOSRD
+preplace port tx_resend_pause_10_o -pg 1 -lvl 13 -x 4610 -y 420 -defaultsOSRD
+preplace port tx_resend_pause_11_o -pg 1 -lvl 13 -x 4610 -y 520 -defaultsOSRD
+preplace port clk_100M_out -pg 1 -lvl 13 -x 4610 -y 760 -defaultsOSRD
+preplace portBus port0_mode -pg 1 -lvl 0 -x -1120 -y 100 -defaultsOSRD
+preplace portBus port1_mode -pg 1 -lvl 0 -x -1120 -y 180 -defaultsOSRD
+preplace portBus stat_rx_pause_req_00_i -pg 1 -lvl 0 -x -1120 -y 160 -defaultsOSRD
+preplace portBus stat_rx_pause_req_01_i -pg 1 -lvl 0 -x -1120 -y 80 -defaultsOSRD
+preplace portBus stat_rx_pause_req_10_i -pg 1 -lvl 0 -x -1120 -y 20 -defaultsOSRD
+preplace portBus stat_rx_pause_req_11_i -pg 1 -lvl 0 -x -1120 -y 280 -defaultsOSRD
+preplace portBus stat_tx_pause_valid_00_i -pg 1 -lvl 0 -x -1120 -y -20 -defaultsOSRD
+preplace portBus stat_tx_pause_valid_01_i -pg 1 -lvl 0 -x -1120 -y 60 -defaultsOSRD
+preplace portBus stat_tx_pause_valid_10_i -pg 1 -lvl 0 -x -1120 -y 220 -defaultsOSRD
+preplace portBus stat_tx_pause_valid_11_i -pg 1 -lvl 0 -x -1120 -y -80 -defaultsOSRD
+preplace portBus tx_pause_req_00_o -pg 1 -lvl 13 -x 4610 -y 280 -defaultsOSRD
+preplace portBus tx_pause_req_01_o -pg 1 -lvl 13 -x 4610 -y 260 -defaultsOSRD
+preplace portBus tx_pause_req_10_o -pg 1 -lvl 13 -x 4610 -y 400 -defaultsOSRD
+preplace portBus tx_pause_req_11_o -pg 1 -lvl 13 -x 4610 -y 440 -defaultsOSRD
+preplace inst MCDI -pg 1 -lvl 2 -x -100 -y 250 -defaultsOSRD
+preplace inst PS -pg 1 -lvl 3 -x 720 -y 270 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -x 2020 -y 610 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 6 -x 2020 -y 310 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 5 -x 1570 -y 560 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 5 -x 1570 -y 720 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 4 -x 1200 -y 520 -defaultsOSRD
+preplace inst axis_interconnect_0 -pg 1 -lvl 11 -x 3870 -y 740 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -630 -y 770 -defaultsOSRD
+preplace inst dfx_decoupler_0 -pg 1 -lvl 8 -x 2790 -y 20 -defaultsOSRD
+preplace inst dfx_decoupler_1 -pg 1 -lvl 6 -x 2020 -y 470 -defaultsOSRD
+preplace inst dfx_decoupler_2 -pg 1 -lvl 10 -x 3490 -y 470 -defaultsOSRD
+preplace inst dfx_decoupler_3 -pg 1 -lvl 10 -x 3490 -y 710 -defaultsOSRD
+preplace inst from_MAC00_is_MAC0 -pg 1 -lvl 1 -x -630 -y -290 -defaultsOSRD
+preplace inst from_ps -pg 1 -lvl 8 -x 2790 -y -470 -defaultsOSRD
+preplace inst to_MAC00_is_MAC0 -pg 1 -lvl 12 -x 4280 -y -70 -defaultsOSRD
+preplace inst to_MAC01_is_MAC2 -pg 1 -lvl 12 -x 4280 -y -520 -defaultsOSRD
+preplace inst to_MAC11_is_MAC3 -pg 1 -lvl 12 -x 4280 -y -290 -defaultsOSRD
+preplace inst to_MAC10_is_MAC1 -pg 1 -lvl 12 -x 4280 -y 140 -defaultsOSRD
+preplace inst from_MAC10_is_MAC1 -pg 1 -lvl 1 -x -630 -y -80 -defaultsOSRD -resize 380 196
+preplace inst from_MAC01_is_MAC2 -pg 1 -lvl 1 -x -630 -y 130 -defaultsOSRD -resize 380 196
+preplace inst from_MAC11_is_MAC3 -pg 1 -lvl 1 -x -630 -y 350 -defaultsOSRD -resize 380 196
+preplace inst version_register_0 -pg 1 -lvl 7 -x 2420 -y 760 -defaultsOSRD
+preplace netloc Din_01_0_1 1 0 12 -1090J -480 NJ -480 N -480 950 -470 N -470 N -470 N -470 2660 -390 2950 -510 N -510 N -510 N
+preplace netloc Din_0_0_1 1 0 12 -1080J -490 NJ -490 N -490 N -490 N -490 N -490 N -490 2650 -330 N -330 N -330 N -330 4070
+preplace netloc M00_AXIS_ACLK_0_0_1 1 0 12 -1060J -460 NJ -460 N -460 930 -450 N -450 N -450 N -450 2630 -370 N -370 N -370 N -370 4090
+preplace netloc axi_gpio_0_gpio_io_o 1 6 2 2190 130 2660
+preplace netloc axi_gpio_1_gpio_io_o 1 5 2 1870 750 2180
+preplace netloc axi_gpio_2_gpio_io_o 1 5 5 1780 720 2220 490 N 490 N 490 NJ
+preplace netloc axi_gpio_3_gpio_io_o 1 5 5 1720 850 2180 860 2600 740 N 740 N
+preplace netloc clk_in1_0_1 1 0 1 -1070J 40n
+preplace netloc clk_wiz_0_clk_200M 1 0 13 -890 490 -290 350 60 360 1040 250 1400 310 1830 760 2230 350 2610 350 N 350 N 350 3680 320 4080 320 NJ
+preplace netloc clk_wiz_0_clk_400M 1 1 12 N 780 N 780 N 780 1390 820 1740 800 2210 360 N 360 N 360 NJ 360 N 360 4030 340 NJ
+preplace netloc clk_wiz_0_locked 1 0 13 -880 500 -260 360 50 370 1020 230 1410 330 1810 770 2280 380 2640 380 N 380 N 380 3690 370 4050 360 NJ
+preplace netloc dfx_decoupler_0_decouple_status 1 6 3 N 640 N 640 2930
+preplace netloc dfx_decoupler_1_decouple_status 1 6 1 2170 340n
+preplace netloc dfx_decoupler_2_decouple_status 1 5 6 1770 830 2250 850 N 850 N 850 NJ 850 3630
+preplace netloc dfx_decoupler_3_decouple_status 1 5 6 1760 820 2300 840 N 840 N 840 NJ 840 3620
+preplace netloc from_MAC00_is_MAC0_o_ctl_tx_pause_req_0 1 1 12 -420 -680 N -680 N -680 N -680 N -680 N -680 N -680 N -680 N -680 N -680 N -680 4520J
+preplace netloc from_MAC00_is_MAC0_o_ctl_tx_resend_pause_0 1 1 12 -400 -670 N -670 N -670 N -670 N -670 N -670 N -670 N -670 N -670 N -670 N -670 4500J
+preplace netloc i_stat_tx_pause_valid_0_0_1 1 0 1 -1030J -290n
+preplace netloc i_stat_tx_pause_valid_0_0_2 1 0 1 -990J 60n
+preplace netloc port0_mode_1 1 0 2 -910 -440 -330
+preplace netloc port1_mode_1 1 0 2 -900 480 -300
+preplace netloc qdma_axi_aclk 1 3 5 1050 -440 N -440 N -440 N -440 N
+preplace netloc qdma_axi_aresetn 1 0 4 -880 510 -270 450 N 450 980
+preplace netloc rx_aclk_01 1 0 1 -980J -60n
+preplace netloc rx_aclk_10_1 1 0 1 -940J -40n
+preplace netloc rx_aclk_11_1 1 0 1 -1050J 240n
+preplace netloc s_axis_aclk_0_0_1 1 0 1 -1020J -250n
+preplace netloc s_axis_aresetn_0_0_1 1 0 12 -920J -450 NJ -450 N -450 920 -430 N -430 N -430 N -430 2620 -380 N -380 N -380 N -380 4100
+preplace netloc stat_rx_pause_req_10_i_1 1 0 12 -1050J -430 NJ -430 N -430 910 -420 N -420 N -420 N -420 2590 -310 N -310 N -310 N -310 4040
+preplace netloc stat_rx_pause_req_11_i_1 1 0 12 -960J -420 NJ -420 N -420 900 -410 N -410 N -410 N -410 2570 -290 N -290 N -290 N -290 4060
+preplace netloc stat_tx_pause_valid_10_i_1 1 0 1 -950J -80n
+preplace netloc stat_tx_pause_valid_11_i_1 1 0 1 -1000J -80n
+preplace netloc tx_aclk_10_1 1 0 12 -1040J -410 NJ -410 N -410 890 -400 N -400 N -400 N -400 2560 -280 N -280 N -280 N -280 4030
+preplace netloc tx_aclk_11_1 1 0 12 -1010J -470 NJ -470 N -470 940 -460 N -460 N -460 N -460 2600 -300 N -300 N -300 N -300 N
+preplace netloc tx_clk_01_0_1 1 0 12 -1100J -510 NJ -510 N -510 N -510 N -510 N -510 N -510 2550 -570 2950 -530 N -530 N -530 N
+preplace netloc from_MAC00_is_MAC1_o_ctl_tx_pause_req_0 1 1 12 -370 -660 N -660 N -660 N -660 N -660 N -660 N -660 N -660 N -660 N -660 N -660 4490J
+preplace netloc from_MAC00_is_MAC1_o_ctl_tx_resend_pause_0 1 1 12 -410 -720 N -720 N -720 N -720 N -720 N -720 N -720 N -720 N -720 N -720 N -720 4530J
+preplace netloc from_MAC01_is_MAC2_o_ctl_tx_pause_req_0 1 1 12 -380 -710 N -710 N -710 N -710 N -710 N -710 N -710 N -710 N -710 N -710 N -710 4550
+preplace netloc from_MAC01_is_MAC2_o_ctl_tx_resend_pause_0 1 1 12 -350 -650 N -650 N -650 N -650 N -650 N -650 N -650 N -650 N -650 N -650 N -650 4510
+preplace netloc from_MAC01_is_MAC3_o_ctl_tx_pause_req_0 1 1 12 -340 930 N 930 N 930 N 930 N 930 N 930 N 930 N 930 N 930 N 930 N 930 4520
+preplace netloc from_MAC01_is_MAC3_o_ctl_tx_resend_pause_0 1 1 12 N 380 N 380 940 840 N 840 N 840 2270 550 N 550 N 550 N 550 3670 520 N 520 N
+preplace netloc clk_wiz_0_clk_100M 1 1 12 -410J 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 4100J 760 NJ
+preplace netloc MCDI_m0_axis_MCDI 1 2 9 70 350 1000 240 N 240 1820 730 2260 620 N 620 N 620 N 620 3670
+preplace netloc MCDI_m1_axis 1 2 6 50 130 N 130 N 130 N 130 2180 120 2630
+preplace netloc PS_M_AXIS_MM2S 1 3 5 960 -480 NJ -480 N -480 N -480 2570
+preplace netloc PS_M_AXI_HPM0_LPD 1 3 1 990 240n
+preplace netloc axi_interconnect_1_M00_AXI 1 2 3 80 760 N 760 1350J
+preplace netloc dfx_decoupler_2_s_intf_0 1 10 2 3630 -130 N
+preplace netloc dfx_decoupler_2_s_intf_1 1 10 2 3650 80 N
+preplace netloc dfx_decoupler_3_s_intf_0 1 10 2 3640 -570 N
+preplace netloc dfx_decoupler_3_s_intf_1 1 10 2 3660 -340 N
+preplace netloc fifo_CNTRL_VLAN_to_MAC2_M_AXIS 1 8 4 2930 -590 N -590 N -590 N
+preplace netloc fifo_CNTRL_VLAN_to_MAC3_M_AXIS 1 8 4 N -480 N -480 N -480 4110
+preplace netloc from_MAC00_is_MAC0_m1_axis 1 1 7 N -320 N -320 N -320 N -320 N -320 N -320 2550
+preplace netloc rx_AXIS_00_1 1 0 1 NJ -350
+preplace netloc to_MAC01_is_MAC2_m_axis_0 1 12 1 NJ -520
+preplace netloc to_MAC01_is_MAC3_m_axis_01 1 12 1 4470J -290n
+preplace netloc to_MAC10_is_MAC1_m_axis_01 1 12 1 4450J 140n
+preplace netloc to_MAC10_is_MAC2_m_axis_01 1 12 1 4480J -70n
+preplace netloc rx_AXIS_10_1 1 0 1 N -140
+preplace netloc from_MAC00_is_MAC1_m1_axis 1 1 7 N -110 N -110 N -110 N -110 N -110 N -110 2540
+preplace netloc rx_AXIS_01_1 1 0 1 -930 -120n
+preplace netloc from_MAC10_is_MAC2_m1_axis 1 1 1 -340 100n
+preplace netloc rx_AXIS_11_1 1 0 1 -970 -100n
+preplace netloc from_MAC01_is_MAC3_m1_axis 1 1 1 -310 220n
+preplace netloc from_MAC00_is_MAC0_m0_axis 1 1 11 -390 -500 N -500 N -500 N -500 N -500 N -500 2560 -560 N -560 N -560 N -560 4110
+preplace netloc from_MAC10_is_MAC1_m0_axis 1 1 11 -360 -310 N -310 N -310 N -310 N -310 N -310 2580 -320 N -320 N -320 N -320 N
+preplace netloc from_MAC01_is_MAC2_m0_axis 1 1 11 NJ 120 N 120 N 120 N 120 N 120 2170 110 2570 -110 N -110 N -110 N -110 N
+preplace netloc from_MAC11_is_MAC3_m0_axis 1 1 11 -320J 140 N 140 N 140 N 140 N 140 N 140 N 140 2950 100 N 100 N 100 N
+preplace netloc axis_interconnect_0_M00_AXIS 1 2 10 90 910 N 910 N 910 N 910 N 910 N 910 N 910 N 910 N 910 4050
+preplace netloc dfx_decoupler_3_s_intf_2 1 10 1 3700 650n
+preplace netloc axi_interconnect_1_M01_AXI 1 4 3 1370J 460 1790 740 N
+preplace netloc axi_interconnect_1_M02_AXI 1 4 2 1360 450 1840
+preplace netloc axi_interconnect_1_M03_AXI 1 4 2 1420 470 1800
+preplace netloc axi_interconnect_1_M04_AXI 1 4 2 1380 290 N
+preplace netloc axi_interconnect_1_M05_AXI 1 4 1 1390 540n
+preplace netloc axi_interconnect_1_M06_AXI 1 4 1 1370 580n
+preplace netloc dfx_decoupler_0_s_intf_0 1 8 5 2920J -730 NJ -730 NJ -730 NJ -730 4570J
+preplace netloc dfx_decoupler_0_s_intf_1 1 8 5 2940J -700 NJ -700 NJ -700 NJ -700 4560J
+preplace netloc dfx_decoupler_0_s_intf_2 1 8 5 2960J -690 NJ -690 NJ -690 NJ -690 4540J
+preplace netloc dfx_decoupler_1_s_intf_0 1 6 7 2200J 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 4460J
+preplace netloc rp_intf_0_0_1 1 0 10 -1100J 460 NJ 460 NJ 460 970J 260 NJ 260 1860J 710 2240J 650 NJ 650 NJ 650 3160J
+preplace netloc rp_intf_1_0_1 1 0 10 NJ 470 NJ 470 NJ 470 1030J 280 NJ 280 1870J 400 NJ 400 NJ 400 NJ 400 3180J
+preplace netloc rp_intf_0_0_2 1 0 10 -1030J 660 -280J 390 NJ 390 1010J 270 NJ 270 1850J 700 2250J 660 NJ 660 NJ 660 3180J
+preplace netloc rp_intf_1_0_2 1 0 10 -970J 670 NJ 670 NJ 670 900J 830 NJ 830 1750J 810 2300J 670 NJ 670 NJ 670 3170J
+preplace netloc rp_intf_2_0_1 1 0 10 -910J 680 NJ 680 NJ 680 890J 810 NJ 810 1730J 790 2290J 680 NJ 680 NJ 680 3160J
+levelinfo -pg 1 -1120 -630 -100 720 1200 1570 2020 2420 2790 3140 3490 3870 4280 4610
+pagesize -pg 1 -db -bbox -sgen -1390 -780 4830 3250
+"
+}
+

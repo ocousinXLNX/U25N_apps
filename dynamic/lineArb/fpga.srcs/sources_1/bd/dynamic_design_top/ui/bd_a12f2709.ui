@@ -1,0 +1,68 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.606302",
+   "Default View_TopLeft":"-251,-266",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port m_axis -pg 1 -lvl 7 -x 2210 -y 590 -defaultsOSRD
+preplace port maex_ovs_req_ar -pg 1 -lvl 7 -x 2210 -y 400 -defaultsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x -60 -y 210 -defaultsOSRD
+preplace port cam_mem_aresetn -pg 1 -lvl 0 -x -60 -y 630 -defaultsOSRD
+preplace port clk_100M_out -pg 1 -lvl 0 -x -60 -y 470 -defaultsOSRD
+preplace port clk_200M_out -pg 1 -lvl 0 -x -60 -y 320 -defaultsOSRD
+preplace port clk_400M_out -pg 1 -lvl 0 -x -60 -y 650 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x -60 -y 610 -defaultsOSRD
+preplace port s_axis_aresetn_0 -pg 1 -lvl 0 -x -60 -y 340 -defaultsOSRD
+preplace port s_axis_tlast -pg 1 -lvl 0 -x -60 -y 380 -defaultsOSRD
+preplace port s_axis_tready -pg 1 -lvl 7 -x 2210 -y 20 -defaultsOSRD
+preplace port s_axis_tvalid -pg 1 -lvl 0 -x -60 -y 360 -defaultsOSRD
+preplace portBus In0 -pg 1 -lvl 0 -x -60 -y 490 -defaultsOSRD
+preplace portBus s_axis_tdata -pg 1 -lvl 0 -x -60 -y 230 -defaultsOSRD
+preplace portBus s_axis_tkeep -pg 1 -lvl 0 -x -60 -y 250 -defaultsOSRD
+preplace inst MAEX_P4 -pg 1 -lvl 3 -x 790 -y 230 -defaultsOSRD
+preplace inst MD_in_Valid_gen_0 -pg 1 -lvl 2 -x 380 -y 360 -defaultsOSRD
+preplace inst data_latch_block_0 -pg 1 -lvl 6 -x 2030 -y 590 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 6 -x 2030 -y 150 -defaultsOSRD
+preplace inst xlconcat_4 -pg 1 -lvl 2 -x 380 -y 540 -defaultsOSRD
+preplace inst xlconcat_5 -pg 1 -lvl 5 -x 1570 -y 580 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 100 -y 550 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -x 1170 -y 380 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 4 -x 1170 -y 280 -defaultsOSRD
+preplace inst counter_input_genera_0 -pg 1 -lvl 5 -x 1570 -y 410 -defaultsOSRD
+preplace netloc MAEXD_m_axis_tuser 1 0 2 NJ 490 210J
+preplace netloc MAEX_P4_irq 1 3 2 1040J 200 1330
+preplace netloc MAEX_P4_m_axis_tdata 1 3 3 NJ 170 NJ 170 1850
+preplace netloc MAEX_P4_m_axis_tkeep 1 3 3 1000J 160 NJ 160 1830
+preplace netloc MAEX_P4_m_axis_tlast 1 3 3 1010J 180 NJ 180 1820
+preplace netloc MAEX_P4_m_axis_tvalid 1 3 3 1020J 190 NJ 190 1810
+preplace netloc MAEX_P4_s_axis_tready 1 1 6 230 170 540 10 NJ 10 NJ 10 NJ 10 2190J
+preplace netloc MAEX_P4_user_metadata_out_valid 1 3 2 1050J 210 1320
+preplace netloc MAEX_m_axis_tuser 1 3 1 1010 270n
+preplace netloc MD_in_Valid_gen_0_metadata_valid 1 2 1 530 360n
+preplace netloc PS_CLK 1 0 3 -20J 200 NJ 200 570J
+preplace netloc cam_mem_aresetn_1 1 0 3 -10J 220 NJ 220 540J
+preplace netloc clk_400M_out_1 1 0 3 10J 240 NJ 240 530J
+preplace netloc clk_wiz_0_clk_250M 1 0 6 NJ 320 190 230 550 20 NJ 20 1340 510 1800
+preplace netloc counter_input_genera_0_stream_tready_out 1 5 1 1840 160n
+preplace netloc data_latch_block_0_s_axis_tready 1 5 1 1860 140n
+preplace netloc s_axi_aresetn_1 1 0 3 0J 260 NJ 260 520J
+preplace netloc s_axis_aresetn_0_0_2 1 0 6 NJ 340 220 250 560 30 NJ 30 1310 680 NJ
+preplace netloc s_axis_tdata_1 1 0 3 -40J 110 NJ 110 NJ
+preplace netloc s_axis_tkeep_1 1 0 3 -30J 130 NJ 130 NJ
+preplace netloc s_axis_tlast_1 1 0 3 NJ 380 200 150 N
+preplace netloc s_axis_tvalid_1 1 0 3 NJ 360 210 190 N
+preplace netloc util_vector_logic_0_Res 1 3 4 1030J 220 NJ 220 NJ 220 2190
+preplace netloc xlconcat_4_dout 1 2 1 560 350n
+preplace netloc xlconcat_5_dout 1 5 1 N 580
+preplace netloc xlconstant_1_dout 1 1 1 NJ 550
+preplace netloc xlslice_1_Dout 1 4 1 1290 380n
+preplace netloc xlslice_2_Dout 1 4 1 1300 280n
+preplace netloc Conn1 1 5 2 NJ 400 NJ
+preplace netloc data_latch_block_0_m_axis 1 6 1 NJ 590
+preplace netloc axi_interconnect_0_M09_AXI 1 0 3 NJ 210 NJ 210 NJ
+levelinfo -pg 1 -60 100 380 790 1170 1570 2030 2210
+pagesize -pg 1 -db -bbox -sgen -250 0 2390 740
+"
+}
+0

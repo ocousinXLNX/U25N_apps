@@ -1,0 +1,90 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.380601",
+   "Default View_TopLeft":"-181,-273",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port M_AXIS -pg 1 -lvl 10 -x 3820 -y 540 -defaultsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x -10 -y 260 -defaultsOSRD
+preplace port s_axis -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace port clk_100M_out -pg 1 -lvl 0 -x -10 -y 320 -defaultsOSRD
+preplace port clk_200M_out -pg 1 -lvl 0 -x -10 -y 110 -defaultsOSRD
+preplace port m0_axis_tready -pg 1 -lvl 0 -x -10 -y 460 -defaultsOSRD
+preplace port m_axis_tlast -pg 1 -lvl 10 -x 3820 -y 250 -defaultsOSRD
+preplace port m_axis_tvalid -pg 1 -lvl 10 -x 3820 -y 290 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x -10 -y 340 -defaultsOSRD
+preplace port s_axis_aresetn_0 -pg 1 -lvl 0 -x -10 -y 150 -defaultsOSRD
+preplace portBus m0_axis_tdest -pg 1 -lvl 10 -x 3820 -y 190 -defaultsOSRD
+preplace portBus m0_axis_tuser -pg 1 -lvl 10 -x 3820 -y 270 -defaultsOSRD
+preplace portBus m_axis_tdata -pg 1 -lvl 10 -x 3820 -y 210 -defaultsOSRD
+preplace portBus m_axis_tkeep -pg 1 -lvl 10 -x 3820 -y 230 -defaultsOSRD
+preplace inst Demux_logic_Recirctn_0 -pg 1 -lvl 7 -x 2800 -y 320 -defaultsOSRD
+preplace inst MAEXE_P4 -pg 1 -lvl 3 -x 1000 -y 260 -defaultsOSRD
+preplace inst MD_in_Valid_gen_0 -pg 1 -lvl 2 -x 590 -y 110 -defaultsOSRD
+preplace inst Recirculation_check_0 -pg 1 -lvl 6 -x 2240 -y 350 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 5 -x 1750 -y 270 -defaultsOSRD
+preplace inst data_latch_block_0 -pg 1 -lvl 1 -x 200 -y 120 -defaultsOSRD
+preplace inst data_latch_block_1 -pg 1 -lvl 9 -x 3640 -y 540 -defaultsOSRD
+preplace inst dst_mport -pg 1 -lvl 4 -x 1380 -y 180 -defaultsOSRD
+preplace inst src_mport -pg 1 -lvl 4 -x 1380 -y 320 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 8 -x 3250 -y 460 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 7 -x 2800 -y 570 -defaultsOSRD
+preplace netloc Demux_logic_Recirctn_0_m0_axis_tdata 1 7 3 NJ 210 NJ 210 NJ
+preplace netloc Demux_logic_Recirctn_0_m0_axis_tdest 1 7 3 NJ 190 NJ 190 NJ
+preplace netloc Demux_logic_Recirctn_0_m0_axis_tkeep 1 7 3 NJ 230 NJ 230 NJ
+preplace netloc Demux_logic_Recirctn_0_m0_axis_tlast 1 7 3 NJ 250 NJ 250 NJ
+preplace netloc Demux_logic_Recirctn_0_m0_axis_tuser 1 7 3 NJ 270 NJ 270 NJ
+preplace netloc Demux_logic_Recirctn_0_m0_axis_tvalid 1 7 3 NJ 290 NJ 290 NJ
+preplace netloc Demux_logic_Recirctn_0_m1_axis_tdata 1 7 2 3020J 340 3410
+preplace netloc Demux_logic_Recirctn_0_m1_axis_tdest 1 7 1 3030 350n
+preplace netloc Demux_logic_Recirctn_0_m1_axis_tkeep 1 7 2 3040J 350 3400
+preplace netloc Demux_logic_Recirctn_0_m1_axis_tlast 1 7 2 3050J 360 3390
+preplace netloc Demux_logic_Recirctn_0_m1_axis_tuser 1 7 1 3020 430n
+preplace netloc Demux_logic_Recirctn_0_m1_axis_tvalid 1 7 2 3060J 370 3380
+preplace netloc Demux_logic_Recirctn_0_s_axis_tready 1 6 1 2510 340n
+preplace netloc MAEXE_P4_m_axis_tdata 1 3 2 1250 240 1500J
+preplace netloc MAEXE_P4_m_axis_tkeep 1 3 2 1240 250 1510J
+preplace netloc MAEXE_P4_m_axis_tlast 1 3 2 1220 260 NJ
+preplace netloc MAEXE_P4_m_axis_tvalid 1 3 2 1230 110 1530J
+preplace netloc MAEXE_P4_s_axis_tready 1 1 2 450 220 N
+preplace netloc MAEXE_P4_user_metadata_out 1 3 1 1260 180n
+preplace netloc MD_in_Valid_gen_0_metadata_valid 1 2 1 750 110n
+preplace netloc Recirculation_check_0_dmport_out 1 6 1 2480 220n
+preplace netloc Recirculation_check_0_m_axis_tdata 1 6 1 2450 240n
+preplace netloc Recirculation_check_0_m_axis_tkeep 1 6 1 2460 260n
+preplace netloc Recirculation_check_0_m_axis_tlast 1 6 1 2470 280n
+preplace netloc Recirculation_check_0_m_axis_tvalid 1 6 1 2490 320n
+preplace netloc Recirculation_check_0_recirculation_chec 1 6 1 2490 390n
+preplace netloc Recirculation_check_0_s_axis_tready 1 5 1 1980 300n
+preplace netloc Recirculation_check_0_smport_out 1 6 1 2500 300n
+preplace netloc axis_data_fifo_0_m_axis_tdata 1 5 1 2020 220n
+preplace netloc axis_data_fifo_0_m_axis_tdest 1 5 1 1990 240n
+preplace netloc axis_data_fifo_0_m_axis_tkeep 1 5 1 2010 260n
+preplace netloc axis_data_fifo_0_m_axis_tlast 1 5 1 2000 280n
+preplace netloc axis_data_fifo_0_m_axis_tuser 1 5 1 1960 320n
+preplace netloc axis_data_fifo_0_m_axis_tvalid 1 5 1 1970 330n
+preplace netloc axis_data_fifo_0_s_axis_tready 1 3 2 1210 120 1520J
+preplace netloc clk_wiz_0_clk_250M 1 0 9 20 250 430 250 790 80 NJ 80 1540 420 2020 510 2520 630 NJ 630 3370
+preplace netloc data_latch_block_0_m_axis_tdata 1 1 2 440J 210 730
+preplace netloc data_latch_block_0_m_axis_tkeep 1 1 2 420J 240 760
+preplace netloc data_latch_block_0_m_axis_tlast 1 1 2 410 230 770
+preplace netloc data_latch_block_0_m_axis_tuser 1 1 2 380J 270 740
+preplace netloc data_latch_block_0_m_axis_tvalid 1 1 2 400 10 780
+preplace netloc data_latch_block_1_s_axis_tready 1 7 2 3070J 380 3360
+preplace netloc dst_mport_Dout 1 4 1 1510J 180n
+preplace netloc m0_axis_tready_1 1 0 8 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 1940 650 NJ 650 3010
+preplace netloc s_axis_aresetn_0_0_2 1 0 9 10 240 390 280 730 440 NJ 440 1550 430 1950 520 2530 640 NJ 640 3400J
+preplace netloc src_mport_Dout 1 4 1 1510J 300n
+preplace netloc xlconcat_0_dout 1 8 1 3370 460n
+preplace netloc xlconstant_0_dout 1 7 1 3050J 480n
+preplace netloc s_axi_aresetn_1 1 0 3 NJ 340 NJ 340 N
+preplace netloc PS_CLK 1 0 3 NJ 320 NJ 320 N
+preplace netloc data_latch_block_1_m_axis 1 9 1 NJ 540
+preplace netloc s_axis_1 1 0 1 NJ 90
+preplace netloc axi_interconnect_0_M10_AXI 1 0 3 NJ 260 NJ 260 N
+levelinfo -pg 1 -10 200 590 1000 1380 1750 2240 2800 3250 3640 3820
+pagesize -pg 1 -db -bbox -sgen -180 -180 4020 760
+"
+}
+0

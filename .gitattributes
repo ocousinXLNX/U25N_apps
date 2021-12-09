@@ -1,0 +1,7 @@
+static/static_route_design.dcp filter=lfs diff=lfs merge=lfs -text
+misc/BOOT.bin filter=lfs diff=lfs merge=lfs -text
+misc/sfc-dkms_5.3.3.1003_all.deb filter=lfs diff=lfs merge=lfs -text
+misc/u25n_rw filter=lfs diff=lfs merge=lfs -text
+misc/u25n_update filter=lfs diff=lfs merge=lfs -text
+misc/sfc-dkms_5.3.3.1004.1_all.deb filter=lfs diff=lfs merge=lfs -text
+misc/bundle-u25-v7_8_17_1004.dat filter=lfs diff=lfs merge=lfs -text

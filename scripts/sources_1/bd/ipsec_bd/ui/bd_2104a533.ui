@@ -1,0 +1,54 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.215087",
+   "Default View_TopLeft":"-1888,-1906",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port cam_mem_aclk -pg 1 -lvl 0 -x -50 -y 140 -defaultsOSRD
+preplace port s_axis_aresetn -pg 1 -lvl 0 -x -50 -y 20 -defaultsOSRD
+preplace port user_metadata_out_valid -pg 1 -lvl 5 -x 1850 -y 370 -defaultsOSRD
+preplace port m_axis_tlast -pg 1 -lvl 5 -x 1850 -y 290 -defaultsOSRD
+preplace port m_axis_tvalid -pg 1 -lvl 5 -x 1850 -y 330 -defaultsOSRD
+preplace port m_axis_tready -pg 1 -lvl 0 -x -50 -y 510 -defaultsOSRD
+preplace portBus user_metadata_out -pg 1 -lvl 5 -x 1850 -y 350 -defaultsOSRD
+preplace portBus m_axis_tdata -pg 1 -lvl 5 -x 1850 -y 250 -defaultsOSRD
+preplace portBus m_axis_tkeep -pg 1 -lvl 5 -x 1850 -y 270 -defaultsOSRD
+preplace inst axis_register_slice_ENC_SAD -pg 1 -lvl 2 -x 560 -y 190 -defaultsOSRD
+preplace inst xlconstant_ENC_SAD_0 -pg 1 -lvl 1 -x 150 -y 290 -defaultsOSRD
+preplace inst axis_data_fifo_ENC_SAD -pg 1 -lvl 1 -x 150 -y 120 -defaultsOSRD
+preplace inst ENC_SAD -pg 1 -lvl 4 -x 1570 -y 360 -defaultsOSRD
+preplace inst P4_in_VALID_gen_block_0 -pg 1 -lvl 3 -x 1070 -y 60 -defaultsOSRD
+preplace netloc axis_data_fifo_0_m_axis_tvalid 1 1 1 340 130n
+preplace netloc axis_register_slice_ENC_SAD_s_axis_tready 1 1 1 N 150
+preplace netloc axis_data_fifo_0_m_axis_tdata 1 1 1 370 90n
+preplace netloc axis_data_fifo_0_m_axis_tkeep 1 1 1 350 110n
+preplace netloc axis_data_fifo_0_m_axis_tlast 1 1 1 320 130n
+preplace netloc xlconstant_0_dout 1 1 1 370J 230n
+preplace netloc Net1 1 0 4 -30 230 360 50 760 220 1290
+preplace netloc Net 1 0 4 -30 10 330 40 800 210 1300
+preplace netloc ENC_SAD_user_metadata_out 1 4 1 1820J 350n
+preplace netloc ENC_SAD_user_metadata_out_valid 1 4 1 1830J 370n
+preplace netloc ENC_SAD_m_axis_tdata 1 4 1 1780J 250n
+preplace netloc ENC_SAD_m_axis_tkeep 1 4 1 1790J 270n
+preplace netloc ENC_SAD_m_axis_tlast 1 4 1 1800J 290n
+preplace netloc ENC_SAD_m_axis_tvalid 1 4 1 1810J 330n
+preplace netloc demux_logic_0_s_axis_tready 1 0 5 -30J 560 NJ 560 NJ 560 NJ 560 1790
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tdata 1 3 1 1360 20n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tkeep 1 3 1 1350 40n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tlast 1 3 1 1340 60n
+preplace netloc ENC_SAD_s_axis_tready 1 3 1 1310 100n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tvalid 1 3 1 1320 80n
+preplace netloc P4_in_VALID_gen_block_0_Tdest_valid_out 1 3 1 1280 140n
+preplace netloc P4_in_VALID_gen_block_0_m_axis_tdest 1 3 1 1330 0n
+preplace netloc axis_register_slice_ENC_SAD_m_axis_tvalid 1 2 1 770 70n
+preplace netloc P4_in_VALID_gen_block_0_s_axis_tready 1 2 1 810 90n
+preplace netloc axis_register_slice_ENC_SAD_m_axis_tdata 1 2 1 750 10n
+preplace netloc axis_register_slice_ENC_SAD_m_axis_tkeep 1 2 1 790 30n
+preplace netloc axis_register_slice_ENC_SAD_m_axis_tlast 1 2 1 820 50n
+preplace netloc axis_register_slice_ENC_SAD_m_axis_tuser 1 2 1 780 -10n
+levelinfo -pg 1 -50 150 560 1070 1570 1850
+pagesize -pg 1 -db -bbox -sgen -210 -90 2090 690
+"
+}
+
